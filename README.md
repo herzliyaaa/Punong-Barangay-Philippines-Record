@@ -68,5 +68,12 @@ IGNORE 1 ROWS (region, province, city, barangay, position, last_name, first_name
 
 ```
 
+### How to Run the Program?
+
+1. Open the XAMPP Control Panel and start Apache and MySQL
+2. Copy/Move the program folder in the htdocs folder 
+3. Now to run your code, open localhost/Punong-Barangay-Philippines-Record/ in your browser. Your PHP file now run and display its output in the browser window.
+
+
 
 
