@@ -8,13 +8,15 @@ The things you need before running the system.
 * XAMPP SERVER
 * WEB BROWSER
 
-### Setting up a MYSQL database
+### Setting up MYSQL database
+
+CSV file: https://www.kaggle.com/codeblu3/philippines-barangay
 
 1. Go to C:\xampp\php and open php.ini
 2. Make sure that the 'mysqli.allow_local_infile = On' and 'mysql.allow_local_infile=On' is enabled, simply remove the semicolon at the beginning of the line and restart the server to activate the extension. 
 3. Place the phBarangay.csv in C:\xampp\mysql\data
 4. Go to http://localhost/phpmyadmin/
-5. Paste this SQL Query:
+5. Copy this SQL Query and Paste it in the SQL Tab:
 
 ```sql
 
