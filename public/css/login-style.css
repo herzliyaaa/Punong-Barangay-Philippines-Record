@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  width: auto;
+  
+}  */
+
+body {
+  /* background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71) !important; */
+
+  background: linear-gradient(to right, #1cb5e0, #010129);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(white, 0.6);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+}
+
+
+.textbox {
+  border-radius: 8px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.textbox img {
+  width: auto;
+  height: auto;
+  padding: 10px 8px;
+  
+}
+
+
+.textbox input {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  border-radius: 15px;
+  font-size: 16px;
+  border-color: rgb(13, 42, 122);
+  width: 85%;
+  padding: 10px 10px;
+  margin: 10px;
+}
+
+.login-container {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section {
+  flex: 1;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 20px;
+  position: absolute;
+  top: 46%;
+  left: 36.5%;
+  /* margin: -100px 0 0 -150px; */
+  width: 400px;
+  box-shadow: 5px 10px 10px;
+}
+
+
+.loginbtn {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 16px;
+  background-color: rgb(27, 62, 126);
+}
+
+
+.logo {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.logo img {
+  height: 100%;
+}
+.text {
+  height: auto;
+  display: inline;
+  position: absolute; 
+  left: 36%;
+  top: 50px;
+  justify-content: space;
+  margin-bottom: 1.5em;
+}
+
+.text h1 {
+  letter-spacing: 0.35px;
+  font-weight: bold;
+  font-size: 22.5px;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
