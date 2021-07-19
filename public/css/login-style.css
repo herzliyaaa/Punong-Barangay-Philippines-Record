@@ -76,8 +76,7 @@ a {
   padding: 40px 30px 30px 30px;
   border-radius: 20px;
   position: absolute;
-  top: 46%;
-  left: 36.5%;
+  top: 40%;
   /* margin: -100px 0 0 -150px; */
   width: 400px;
   box-shadow: 5px 10px 10px;
@@ -110,13 +109,14 @@ a {
 
 .logo img {
   height: 100%;
+  margin-top: -325px;
 }
+
 .text {
   height: auto;
   display: inline;
   position: absolute; 
-  left: 36%;
-  top: 50px;
+  top: 175px;
   justify-content: space;
   margin-bottom: 1.5em;
 }
