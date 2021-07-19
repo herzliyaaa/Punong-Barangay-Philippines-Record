@@ -101,39 +101,30 @@ a {
 
 .logo {
   height: 45vh;
-<<<<<<< HEAD
   display: inline;
   justify-content: center;
   align-items: center;
   top: 0px;
   
   position: absolute;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 25px;
->>>>>>> 135ed85788d092d027d9d56fde745996d488ce0e
 }
 
 .logo img {
   height: 100%;
-<<<<<<< HEAD
  
-=======
   margin-top: -300px;
->>>>>>> 135ed85788d092d027d9d56fde745996d488ce0e
 }
 
 .text {
   height: auto;
   display: inline;
   position: absolute; 
-<<<<<<< HEAD
   top: 300px;
-=======
   top: 180px;
->>>>>>> 135ed85788d092d027d9d56fde745996d488ce0e
   justify-content: space;
   margin-bottom: 1.5em;
 }
