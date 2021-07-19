@@ -109,14 +109,14 @@ a {
 
 .logo img {
   height: 100%;
-  margin-top: -325px;
+  margin-top: -300px;
 }
 
 .text {
   height: auto;
   display: inline;
   position: absolute; 
-  top: 175px;
+  top: 180px;
   justify-content: space;
   margin-bottom: 1.5em;
 }
