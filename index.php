@@ -3,21 +3,22 @@
   <head>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punong Barangay Philippines Record</title>
+    <title>Barangay Officials Philippines Record</title>
     <link rel="stylesheet" href="public/css/login-style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   </head>
 
   <body>
     <div class="login-section">
-      <div class="text">
-        <h1>PUNONG BARANGAY PHILIPPINES RECORD</h1>
-      </div>
-
       <div class="logo">
         <img class="logoimage" src="public/img/phbarangay-logo.png" alt="logo" />
       </div>
 
+      <div class="text">
+        <h1>PUNONG BARANGAY PHILIPPINES RECORD</h1>
+      </div>
+
+      
  <!-- error -->
  <?php if (isset($_GET['error'])) { ?>
   <p class="error"><?php echo $_GET['error']; ?></p>

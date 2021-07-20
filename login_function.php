@@ -99,7 +99,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 			}	
             
 			else {
-				header("Location: index.php?error=Incorect username or password.");
+				header("Location: index.php?error=Incorrect username or password.");
 		        exit();
 			}
 		}

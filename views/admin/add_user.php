@@ -2,32 +2,24 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Punong Barangay Philippines Record</title>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barangay Officials Philippines Record</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="../../public/css/style.css" />
-    <script src="../../public/js/package/dist/chart.js"></script>
-    <script src="../../public/js/package/dist/chart.min.js"></script>
-  
-
 </head>
 
 <body>
 
-
     <div class="d-flex" id="wrapper">
         <?php include "../../sidebar.php"; ?>
-
-
-
         <div id="page-content-wrapper">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
                 <div class="d-flex align-items-center">
                     <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="fs-3 fw-bold m-0">Dashboard</h2>
+                    <h2 class="fs-3 fw-bold m-0"></h2>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,69 +42,63 @@
                 </div>
             </nav>
 
-            <div class="container-fluid px-4">
-                <div class="row g-3 my-2">
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+
+            <a href="users_list.php">
+                <button class="back-btn">Back</button>
+            </a>
+
+            <form action="add_user_function.php" method="post" enctype="multipart/form-data">
+                <div class="infos">
 
 
-                        </div>
+                    <div class="add-info">
+                        <h5>Full Name:</h5>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="add-info">
+
+
+                        <h5>Position:</h5>
+                        <select name="role">
+
+                            <option value="" selected disabled hidden>--</option>
+                            <option value="chairman">Chairman</option>
+                            <option value="mayor">Mayor</option>
+                            <option value="congressman">Congressman</option>
+                            <option value="governor">Governor</option>
+                        </select>
                     </div>
 
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
-                        </div>
+
+                    <div class="add-info">
+                        <h5>user:</h5>
+                        <input type="text" name="user_name">
                     </div>
 
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
-                        </div>
+                    <div class="add-info">
+                        <h5>Password: </h5>
+                        <input type="text" name="password">
                     </div>
 
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div class="dash">
-                                <!-- <h6> Summary of Barangay Clearance Issuances </h6>  -->
-                                <canvas  id="dash_Chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="save-btn" name="add_user_btn">Save</button>
                 </div>
 
-                <div class="row my-5">
-                    <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">List</h3>
-                </div>
-                <div class="col">
-                    <table class="table bg-white rounded shadow-sm  table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col" width="50">#</th>
-                                <th scope="col">Region</th>
-                                <th scope="col">Province</th>
-                                <th scope="col">City</th>
-                                <th scope="col">Barangay</th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-
+            </form>
         </div>
+
+        <!-- /#page-content-wrapper -->
+
     </div>
-    </div>
-    <!-- /#page-content-wrapper -->
+
+
 
 
 
 </body>
-</div>
 
 </html>
-<?php include "../../views/admin/charts/admin_charts.php"; ?>
-<?php include "../..db_connection.php"; ?>
-<?php include "../../views/admin/charts/chart_queries.php"; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 
