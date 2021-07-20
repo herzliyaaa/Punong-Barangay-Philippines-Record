@@ -65,7 +65,7 @@ include "../../db_connection.php";
 
                     <?php
 
-                    $sql =  mysqli_query($connect, "select * from records where city = 'AGNO' ");
+                    $sql =  mysqli_query($connect, "select * from records ");
                     while ($row = mysqli_fetch_array($sql)) {
 
                     ?>
