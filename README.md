@@ -26,7 +26,7 @@ Dataset: https://www.kaggle.com/codeblu3/philippines-barangay
 2. Copy/Move the program folder in the htdocs folder 
 3. Now to run your code, open localhost/Punong-Barangay-Philippines-Record/ in your browser. 
 
-###TODO
+### TODO
 
 1. Filtered Dropdown List Menu for Region, Province, City and Brgy.
 2. Charts
