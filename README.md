@@ -30,6 +30,10 @@ Dataset: https://www.kaggle.com/codeblu3/philippines-barangay
 
 1. Filtered Dropdown List Menu for Region, Province, City and Brgy.
 2. Charts
-3. UI design 
+3. UI design (Login, Dashboard, Officials and Users)
+4. Edit and Delete Officials
+5. View User Details
+6. Delete Confirmation Modal
+
 
 
