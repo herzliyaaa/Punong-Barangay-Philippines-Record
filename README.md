@@ -16,8 +16,7 @@ Dataset: https://www.kaggle.com/codeblu3/philippines-barangay
 2. Make sure that the 'mysqli.allow_local_infile = On' and 'mysql.allow_local_infile=On' is enabled, simply remove the semicolon at the beginning of the line and restart the server to activate the extension. 
 3. Place the phBarangay.csv in C:\xampp\mysql\data
 4. Go to http://localhost/phpmyadmin/
-5. Download the SQL file. [Download here](https://drive.google.com/file/d/1ggwif-_Pv-mj2s6eEVItRobTnHQGUNZI/view?usp=sharing)
-6. Copy the SQL Query and Paste it in the SQL Tab:
+5. Copy and Paste the SQL queries in the SQL Tab. (Note: phbarangay.sql is in the database folder.)
 
 
 ### How to Run the Program?
