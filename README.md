@@ -33,6 +33,7 @@ Dataset: https://www.kaggle.com/codeblu3/philippines-barangay
 4. Edit and Delete Officials
 5. View User Details
 6. Delete Confirmation Modal
+7. Server-side Processes in DataTables 
 
 
 
