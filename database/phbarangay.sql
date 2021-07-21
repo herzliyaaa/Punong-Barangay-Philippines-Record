@@ -48,7 +48,7 @@ COMMIT;
 LOAD DATA INFILE 'C:\phBarangay.csv' 
 INTO TABLE records FIELDS TERMINATED BY ',' 
 LINES TERMINATED BY '\n' 
-IGNORE 1 ROWS (region, province, city, barangay, position, last_name, first_name, middle_name, suffix, email, barangay_hall_tel_no)
+IGNORE 1 ROWS (region, province, city, barangay, position, last_name, first_name, middle_name, suffix, email, barangay_hall_tel_no);
 
 
 INSERT INTO `users` (`id`, `user_name`, `password`, `name`, `role`) VALUES
