@@ -33,7 +33,7 @@ Dataset: https://www.kaggle.com/codeblu3/philippines-barangay
 4. Edit and Delete Officials
 5. View User Details
 6. Delete Confirmation Modal
-7. Server-side Processes in DataTables 
+7. Server-side Processes in DataTables (done)
 
 ### Git Collab
 [Click here for the instructions](https://github.com/herzliyaaa/Punong-Barangay-Philippines-Record/blob/master/gitcollab.md)
