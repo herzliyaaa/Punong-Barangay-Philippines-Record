@@ -59,37 +59,37 @@
             </a>
                    
             <form action="edit_official_function.php" method="post" enctype="multipart/form-data">
-                <div class="infos">
+                <div class="officials-input">
 
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>First Name *:</h5>
                         <input type="text" name="first_name" value="<?php echo $row['first_name']; ?>">
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Middle Name *:</h5>
                         <input type="text" name="middle_name" value="<?php echo $row['middle_name']; ?>"  >
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Last Name *:</h5>
                         <input type="text"  name="last_name" value="<?php echo $row['last_name']; ?>">
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Suffix *:</h5>
                         <input type="text" name="suffix" value="<?php echo $row['suffix']; ?>">
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Position *:</h5>
                         <input type="text" name="position" value="<?php echo $row['position']; ?>">
                     </div>
 
                     
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Region *:</h5>
                         <select name="region" id="region" value="<?php echo $row['region']; ?>">
                             <option value="" selected disabled hidden>--</option>
@@ -100,7 +100,7 @@
                         </select>
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Province *:</h5>
                         <select name="province" id="province" value="<?php echo $row['province']; ?>">
                             <option value="" selected disabled hidden>--</option>
@@ -112,7 +112,7 @@
                     </div>
 
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>City/Municipality *:</h5>
                         <select name="city" id="city" value="<?php echo $row['city']; ?>">
                             <option value="" selected disabled hidden>--</option>
@@ -123,7 +123,7 @@
                         </select>
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Barangay *:</h5>
                         <select name="barangay" id="barangay" value="<?php echo $row['barangay']; ?>">
                             <option value="" selected disabled hidden>--</option>
@@ -134,12 +134,12 @@
                         </select>
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Email Address *:</h5>
                         <input type="text" name="email" value="<?php echo $row['email']; ?>">
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Barangay Hall Phone Number *:</h5>
                         <input type="text" name="barangay_hall_tel_no" value="<?php echo $row['barangay_hall_tel_no']; ?>">
                     </div>

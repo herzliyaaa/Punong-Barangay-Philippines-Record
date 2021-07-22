@@ -10,7 +10,8 @@ include "../../db_connection.php";
     <title>Barangay Management System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="../../public/css/style.css" />
+    <!-- <link rel="stylesheet" href="../../public/css/style.css" /> -->
+    <link rel="stylesheet" href="../../public/css/user-style.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <!-- <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>  -->
@@ -47,41 +48,45 @@ include "../../db_connection.php";
                 </div>
             </nav>
 
+            <section class="user-section">
+                <div class="user-content">
+                    <div class="top-user-section">
+                        <a href="add_user.php">
+                            <button class="add-users-btn"> Add Users </button>
+                        </a>
+                    </div>
+                    <table id="users" class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Username</th>
+                                <th>Role</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
 
-            <div class="content">
-            <a href="add_user.php">
-                <button class="add-resident-btn"> Add Users </button>
-</a>
-                <table id="users" class="table table-striped table-bordered">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Role</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
+                        <?php
 
-                    <?php
+                        $sql =  mysqli_query($connect, "select * from users");
+                        while ($row = mysqli_fetch_array($sql)) {
 
-                    $sql =  mysqli_query($connect, "select * from users");
-                    while ($row = mysqli_fetch_array($sql)) {
+                        ?>
+                            <tr>
+                                <td><?php echo $row['id'] ?></td>
+                                <td><?php echo $row['name'] ?></td>
+                                <td><?php echo $row['user_name'] ?></td>
+                                <td><?php echo $row['role'] ?></td>
+                                <td> <button class="view-user-btn">View</button></a>
+                                </td>
+                            </tr>
+                        <?php
+                        }
+                        ?>
 
-                    ?>
-                        <tr>
-                            <td><?php echo $row['id'] ?></td>
-                            <td><?php echo $row['user_name'] ?></td>
-                            <td><?php echo $row['role'] ?></td>
-                            <td> <button class="view">View</button></a>
-                            </td>
-                        </tr>
-                    <?php
-                    }
-                    ?>
-
-                </table>
-            </div>
-
+                    </table>
+                </div>
+            </section>
 </body>
 <script>
     $(document).ready(function() {
