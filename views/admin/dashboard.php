@@ -95,6 +95,14 @@
                                 <th scope="col">Barangay</th>
                             </tr>
                         </thead>
+                        <tbody>
+                            <tr><td>1</td>
+                                <td>test</td>
+                                <td>test</td>
+                                <td>test</td>
+                                <td>test</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
