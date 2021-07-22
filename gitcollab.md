@@ -6,7 +6,7 @@
 3. Open your gitbash and enter `cd C://xampp/htdocs`
 4. Enter `git clone <forked-repository-url>`
 5. Open your IDE, then open the cloned repository folder. Make some changes.
-6. In your gitbash, enter `cd cloned-folder`
+6. In your gitbash, enter `cd Punong-Barangay-Philippines-Record`
 7. Enter   `git check-out -b branch-name`
 8. Enter `git add .`
 9. Then `git status` (optional) this will check your changes.
