@@ -77,7 +77,7 @@ include "../../db_connection.php";
                                 <td><?php echo $row['name'] ?></td>
                                 <td><?php echo $row['user_name'] ?></td>
                                 <td><?php echo $row['role'] ?></td>
-                                <td> <button class="view-user-btn">View</button></a>
+                                <td> <a href="users_details.php?id=<?php echo $row['id'] ?>"><button class="view-user-btn">View</button></a>
                                 </td>
                             </tr>
                         <?php

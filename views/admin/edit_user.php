@@ -6,6 +6,7 @@
             {
             ?>
 
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -52,57 +53,49 @@
                 </div>
             </nav>
         
-        <section >
-            <a href="users_list.php">
+                <section>
+            <a href="users_details.php?id=<?php echo $id?>">
                 <button class="back-btn">Back</button>
             </a>
                    
-            <form action="./edit_official_function.php" method="post" enctype="multipart/form-data">
+            <form action="edit_user_function.php" method="post" enctype="multipart/form-data"> 
                 <div class="officials-input">
 
-                <div class="add-input">
-                        <h5>ID :</h5> <h6><?php echo $row['id']; ?></h6>
-                        
-                        
+                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                    <div class="add-input">
+                        <h5>User Name *:</h5>
+                        <input type="text" name="user_name" value="<?php echo $row['user_name']; ?>">
                     </div>
 
                     <div class="add-input">
-                        <h5>User Name :</h5>
-                        <h6><?php echo $row['user_name']; ?></h6>
-                        
+                        <h5>Name *:</h5>
+                        <input type="text" name="name" value="<?php echo $row['name']; ?>"  >
                     </div>
 
                     <div class="add-input">
-                        <h5>Password :</h5>
-                        <h6><?php echo $row['password']; ?></h6>
-                        
+                        <h5>Password *:</h5>
+                        <input type="text"  name="password" value="<?php echo $row['password']; ?>">
                     </div>
 
                     <div class="add-input">
-                        <h5>Name :</h5>
-                        <h6><?php echo $row['name']; ?></h6>
-                       
+                        <h5>Role *:</h5>
+                        <input type="text" name="role" value="<?php echo $row['role']; ?>">
                     </div>
 
-                    <div class="add-input">
-                        <h5>role :</h5>
-                        <h6><?php echo $row['role']; ?></h6>
-                      
-                    </div>
-                    <a href="edit_user.php?id=<?php echo $row['id']?> " class="btn btn-primary">edit</a>
-
+                    
+                    <button class="save-btn" name="edit_user_btn">Save</button>
                 </div>
 
             </form>
-            </section>
+            
             <?php 
             } 
             ?>
 
 
-
                 </div>
             </div>
+            </section>
 
 </body>
 </div>

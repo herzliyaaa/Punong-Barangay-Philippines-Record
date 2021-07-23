@@ -18,17 +18,17 @@ if (isset($_POST['edit_official_btn'])) {
 
 
     $sql = "UPDATE `records` SET
-                    `first_name`,
-                    `middle_name`,
-                    `last_name`,
-                    `suffix`,
-                    `position`, 
-                    `region`,
-                    `province`,
-                    `city`,
-                    `barangay`,
-                    `email`   
-                    `barangay_hall_tel_no` 
+                    `first_name`='$first_name',
+                    `middle_name`='$middle_name',
+                    `last_name`='$last_name',
+                    `suffix`='$suffix',
+                    `position`='$position', 
+                    `region`='$region',
+                    `province`='$province',
+                    `city`='$city',
+                    `barangay`='$barangay',
+                    `email`='$email',   
+                    `barangay_hall_tel_no` ='$barangay_hall_tel_no'
                     WHERE `id` = '$id'";
 
                 mysqli_query($connect , $sql);
