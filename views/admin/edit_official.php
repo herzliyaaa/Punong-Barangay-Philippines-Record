@@ -53,15 +53,15 @@
                 </div>
             </nav>
         
-
-            <a href="users_list.php">
+                <section>
+            <a href="official_details.php?id=<?php echo $id?>">
                 <button class="back-btn">Back</button>
             </a>
                    
-            <form action="edit_official_function.php" method="post" enctype="multipart/form-data">
+            <form action="edit_official_function.php" method="post" enctype="multipart/form-data"> 
                 <div class="officials-input">
 
-
+                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                     <div class="add-input">
                         <h5>First Name *:</h5>
                         <input type="text" name="first_name" value="<?php echo $row['first_name']; ?>">
@@ -92,7 +92,7 @@
                     <div class="add-input">
                         <h5>Region *:</h5>
                         <select name="region" id="region" value="<?php echo $row['region']; ?>">
-                            <option value="" selected disabled hidden>--</option>
+                            <option value="<?php echo $row['region']; ?>" selected hidden><?php echo $row['region']; ?></option>
                             <option value="Region 1">Region 1</option>
                             <option value="Region 2">Region 2</option>
                             <option value="Region 3">Region 3</option>
@@ -103,7 +103,7 @@
                     <div class="add-input">
                         <h5>Province *:</h5>
                         <select name="province" id="province" value="<?php echo $row['province']; ?>">
-                            <option value="" selected disabled hidden>--</option>
+                            <option value="<?php echo $row['province']; ?>" selected hidden><?php echo $row['province']; ?></option>
                             <option value="Region 1">Region 1</option>
                             <option value="Region 2">Region 2</option>
                             <option value="Region 3">Region 3</option>
@@ -115,7 +115,7 @@
                     <div class="add-input">
                         <h5>City/Municipality *:</h5>
                         <select name="city" id="city" value="<?php echo $row['city']; ?>">
-                            <option value="" selected disabled hidden>--</option>
+                            <option value="<?php echo $row['city']; ?>" selected hidden><?php echo $row['city']; ?></option>
                             <option value="Region 1">Region 1</option>
                             <option value="Region 2">Region 2</option>
                             <option value="Region 3">Region 3</option>
@@ -126,7 +126,7 @@
                     <div class="add-input">
                         <h5>Barangay *:</h5>
                         <select name="barangay" id="barangay" value="<?php echo $row['barangay']; ?>">
-                            <option value="" selected disabled hidden>--</option>
+                            <option value="<?php echo $row['barangay']; ?>" selected hidden><?php echo $row['barangay']; ?></option>
                             <option value="Region 1">Region 1</option>
                             <option value="Region 2">Region 2</option>
                             <option value="Region 3">Region 3</option>
@@ -144,13 +144,11 @@
                         <input type="text" name="barangay_hall_tel_no" value="<?php echo $row['barangay_hall_tel_no']; ?>">
                     </div>
 
-
                     <button class="save-btn" name="edit_official_btn">Save</button>
                 </div>
 
             </form>
-
-
+            
             <?php 
             } 
             ?>
@@ -158,6 +156,7 @@
 
                 </div>
             </div>
+            </section>
 
 </body>
 </div>
