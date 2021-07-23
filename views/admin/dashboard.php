@@ -59,36 +59,302 @@
                 </div>
             </nav>
 
-            <div class="container-fluid px-4">
-                <div class="row g-3 my-2">
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+<div class="verticalChart">
+<h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Graph</h3>
+
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 37%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">37%</span>
+      </div>
+
+    </div>
+
+    <div class="title">US</div>
+
+  </div>
+
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 16%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">16%</span>
+      </div>
+
+    </div>
+
+    <div class="title">PL</div>
+
+  </div>
+  
+
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 12%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">12%</span>
+      </div>
+
+    </div>
+
+    <div class="title">GB</div>
+
+  </div>
+
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 9%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">9%</span>
+      </div>
+
+    </div>
+
+    <div class="title">DE</div>
+
+  </div>
+
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 7%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">7%</span>
+      </div>
+
+    </div>
+
+    <div class="title">NL</div>
+
+  </div>
+
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 6%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">6%</span>
+      </div>
+
+    </div>
+
+    <div class="title">CA</div>
+
+  </div>
+
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 5%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">5%</span>
+      </div>
+
+    </div>
+
+    <div class="title">FI</div>
+
+  </div>
+
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 4%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">4%</span>
+      </div>
+
+    </div>
+
+    <div class="title">RU</div>
+
+  </div>
+
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 3%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">3%</span>
+      </div>
+
+    </div>
+
+    <div class="title">AU</div>
+
+  </div>
+
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 1%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">1%</span>
+      </div>
+
+    </div>
+
+    <div class="title">N/A</div>
+
+  </div> 
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 1%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">1%</span>
+      </div>
+
+    </div>
+
+    <div class="title">N/A</div>
+
+  </div>
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 1%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">1%</span>
+      </div>
+
+    </div>
+
+    <div class="title">N/A</div>
+
+  </div>
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 1%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">1%</span>
+      </div>
+
+    </div>
+
+    <div class="title">N/A</div>
+
+  </div>  
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 1%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">1%</span>
+      </div>
+
+    </div>
+
+    <div class="title">N/A</div>
+
+  </div>  
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 1%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">1%</span>
+      </div>
+
+    </div>
+
+    <div class="title">N/A</div>
+
+  </div>  
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 1%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">1%</span>
+      </div>
+
+    </div>
+
+    <div class="title">N/A</div>
+
+  </div>  
+  <div class="singleBar">
+
+    <div class="bar">
+
+      <div class="value" style="height: 1%;">
+        <span style="color: rgb(45, 137, 239); display: inline;">1%</span>
+      </div>
+
+    </div>
+
+    <div class="title">N/A</div>
+
+  </div>       
+  
+  
+
+  <div class="clearfix"></div>
 
 
-                        </div>
-                    </div>
 
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+</div>
+    
+  <style>
 
-                        </div>
-                    </div>
 
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+body {
+  background-color: #2D89EF;
+  font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+}
+.verticalChart {
+  width:100%;
+  overflow:auto;
+  
+}
+.singleBar {
+    width:9%;
+    float:left;
+    margin-left:0.5%;
+    margin-right:0.5%;
+  }
+    .bar {
+      position:relative;
+      height:200px;
+      background:rgba(255,255,255,0.2);
+      overflow:auto;
+    }
+        .value {
+        position:absolute;
+        bottom:0;
+        width:100%;
+        background:#ffffff;
+        color:#ffffff;
+        }
+        span {
+          position:absolute;
+          font-size:12px;
+          bottom:0;
+          width:100%;
+          height:20px;
+          color:#dddddd;
+          text-shadow:0px -1px 0px #ffffff, 0px 1px 0px #ffffff, 1px 0px 0px #ffffff, -1px 0px 0px #ffffff, -1px -1px 0px #ffffff, -1px 1px 0px #ffffff, 1px 1px 0px #ffffff, 1px -1px 0px #ffffff;
+          display:none;
+          text-align:center;
+        }
+      
+    
+    .title {
+      margin-top:5px;
+      text-align:center;
+      color: #fff;
+    }
+  
 
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div class="dash">
-                                <!-- <h6> Summary of Barangay Clearance Issuances </h6>  -->
-                                <canvas  id="dash_Chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  </style>
+                
 
                 <div class="row my-5">
                     <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">List</h3>
