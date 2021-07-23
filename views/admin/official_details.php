@@ -52,7 +52,7 @@
                 </div>
             </nav>
         
-
+        <section >
             <a href="officials_directory.php">
                 <button class="back-btn">Back</button>
             </a>
@@ -86,7 +86,7 @@
 
                     <div class="add-input">
                         <h5>Suffix :</h5>
-                        <h6><?php echo $row['first_name']; ?></h6>
+                        <h6><?php echo $row['suffix']; ?></h6>
                       
                     </div>
 
@@ -136,13 +136,15 @@
                     </div>
 
 
-                    <button class="save-btn" name="edit_official_btn">Edit</button>
-                    <button class="save-btn" name="edit_official_btn">Delete</button>
+                    <a href="edit_official.php?id=<?php echo $row['id']?> " class="btn btn-primary">edit</a>
+
+                    
+                <?php include('modal.php'); ?>
 
                 </div>
 
             </form>
-
+            </section>
             <?php 
             } 
             ?>

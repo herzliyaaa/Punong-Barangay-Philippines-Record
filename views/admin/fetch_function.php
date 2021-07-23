@@ -40,7 +40,9 @@ $query=mysqli_query($connect,$sql);
 
 $data=array();
 
+
 while($row=mysqli_fetch_array($query)){
+    $id= $row[0];
     $subdata=array();
     $subdata[]=$row[0]; //id
     $subdata[]=$row[1]; //barangay
@@ -50,7 +52,8 @@ while($row=mysqli_fetch_array($query)){
     $subdata[]=$row[5]; //middle_name
     $subdata[]=$row[6]; //suffix 
     $subdata[]=$row[7]; //email
-    $subdata[]=$row[8]; //barangay_hall_tell_no    
+    $subdata[]=$row[8]; //barangay_hall_tell_no   
+    $subdata[]="<a href=official_details.php?id=$id>view</a>" ; 
     $data[]=$subdata;
 }
 
