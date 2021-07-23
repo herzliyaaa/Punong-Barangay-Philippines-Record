@@ -22,18 +22,11 @@ Dataset: https://www.kaggle.com/codeblu3/philippines-barangay
 ### How to Run the Program?
 
 1. Open the XAMPP Control Panel and start Apache and MySQL
-2. Copy/Move the program folder in the htdocs folder 
+2. Copy/Move the program folder in the htdocs folder (C:\xampp\htdocs\Punong-Barangay-Philippines-Record)
 3. Now to run your code, open localhost/Punong-Barangay-Philippines-Record/ in your browser. 
 
-### TODO
-
-1. Filtered Dropdown List Menu for Region, Province, City and Brgy.
-2. Charts
-3. UI design (Login, Dashboard, Officials and Users)
-4. Edit and Delete Officials
-5. View User Details
-6. Delete Confirmation Modal
-7. Server-side Processes in DataTables 
 
 
+### Git Collab
+[Click here for the instructions](https://github.com/herzliyaaa/Punong-Barangay-Philippines-Record/blob/master/gitcollab.md)
 

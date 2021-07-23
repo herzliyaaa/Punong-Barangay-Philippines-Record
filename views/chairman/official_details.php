@@ -58,39 +58,39 @@
             </a>
                    
             <form action="edit_official_function.php" method="post" enctype="multipart/form-data">
-                <div class="infos">
+                <div class="officials-input">
 
-                <div class="add-info">
+                <div class="add-input">
                         <h5>ID :</h5> <h6><?php echo $row['id']; ?></h6>
                         
                         
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>First Name :</h5>
                         <h6><?php echo $row['first_name']; ?></h6>
                         
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Middle Name :</h5>
                         <h6><?php echo $row['middle_name']; ?></h6>
                         
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Last Name :</h5>
                         <h6><?php echo $row['last_name']; ?></h6>
                        
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Suffix :</h5>
                         <h6><?php echo $row['first_name']; ?></h6>
                       
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Position :</h5>
                         <h6><?php echo $row['position']; ?></h6>
                         
@@ -98,38 +98,38 @@
 
                     
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Region :</h5>
                         <h6><?php echo $row['region']; ?></h6>
                        
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Province :</h5>
                         <h6><?php echo $row['province']; ?></h6>
                         
                     </div>
 
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>City/Municipality :</h5>
                         <h6><?php echo $row['city']; ?></h6>
                         
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Barangay :</h5>
                         <h6><?php echo $row['barangay']; ?></h6>
                        
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Email Address :</h5>
                         <h6><?php echo $row['email']; ?></h6>
                       
                     </div>
 
-                    <div class="add-info">
+                    <div class="add-input">
                         <h5>Barangay Hall Phone Number :</h5>
                         <h6><?php echo $row['barangay_hall_tel_no']; ?></h6>
                         

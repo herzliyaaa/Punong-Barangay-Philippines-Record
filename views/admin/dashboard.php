@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="../../public/css/style.css" />
     <script src="../../public/js/package/dist/chart.js"></script>
     <script src="../../public/js/package/dist/chart.min.js"></script>
+
+    <style type="text/css">
+        
+        tbody{
+        background: white;
+        color: darkslateblue;
+        }
+
+    </style>
   
 
 </head>

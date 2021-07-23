@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="../../public/css/style.css" />
    
+    <style type="text/css">
+        
+        tbody{
+        background: white;
+        color: darkslateblue;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -94,7 +102,11 @@
                                     <th scope="col">Barangay</th>  
                                 </tr>
                             </thead>
+<<<<<<< HEAD
                             <tbody>
+=======
+                              <tbody>
+>>>>>>> 95f966c442b5365b7108d947ecc29fd527e3fc00
                             <tr><td>1</td>
                                 <td>test</td>
                                 <td>test</td>

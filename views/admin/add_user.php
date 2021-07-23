@@ -8,7 +8,8 @@
     <title>Barangay Officials Philippines Record</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="../../public/css/style.css" />
+    <!-- <link rel="stylesheet" href="../../public/css/style.css" /> -->
+    <link rel="stylesheet" href="../../public/css/user-style.css" />
 </head>
 
 <body>
@@ -19,6 +20,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
                 <div class="d-flex align-items-center">
                     <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                   <h2> Add User </h2>
                     <h2 class="fs-3 fw-bold m-0"></h2>
                 </div>
 
@@ -42,50 +44,53 @@
                 </div>
             </nav>
 
+            <section class="user-section">
+                <a href="users_list.php">
+                    <button class="back-btn">Back</button>
+                </a>
 
-            <a href="users_list.php">
-                <button class="back-btn">Back</button>
-            </a>
-
-            <form action="add_user_function.php" method="post" enctype="multipart/form-data">
-                <div class="infos">
+                <form action="add_user_function.php" method="post" enctype="multipart/form-data" class="user-form">
+                    <div class="infos">
 
 
-                    <div class="add-info">
-                        <h5>Full Name:</h5>
-                        <input type="text" name="name">
+                        <div class="add-input">
+                            <h5>Full Name:</h5>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="add-input">
+
+
+                            <h5>User Role:</h5>
+                            <select name="role">
+
+                                <option value="" selected disabled hidden>--</option>
+                                <option value="chairman">Chairman</option>
+                                <option value="mayor">Mayor</option>
+                                <option value="congressman">Congressman</option>
+                                <option value="governor">Governor</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="add-input">
+                            <h5>Username:</h5>
+                            <input type="text" name="user_name">
+                        </div>
+
+
+                        <div class="add-input">
+                            <h5>Password: </h5>
+                            <input type="text" name="password">
+                        </div>
+                        <div class="save">
+                            <button class="save-btn" name="add_user_btn">Save</button>
+                        </div>
                     </div>
-                    <div class="add-info">
 
+                </form>
 
-                        <h5>Position:</h5>
-                        <select name="role">
-
-                            <option value="" selected disabled hidden>--</option>
-                            <option value="chairman">Chairman</option>
-                            <option value="mayor">Mayor</option>
-                            <option value="congressman">Congressman</option>
-                            <option value="governor">Governor</option>
-                        </select>
-                    </div>
-
-
-
-                    <div class="add-info">
-                        <h5>user:</h5>
-                        <input type="text" name="user_name">
-                    </div>
-
-
-                    <div class="add-info">
-                        <h5>Password: </h5>
-                        <input type="text" name="password">
-                    </div>
-
-                    <button class="save-btn" name="add_user_btn">Save</button>
-                </div>
-
-            </form>
+            </section>
         </div>
 
         <!-- /#page-content-wrapper -->
