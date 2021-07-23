@@ -102,7 +102,11 @@
                                     <th scope="col">Barangay</th>  
                                 </tr>
                             </thead>
+<<<<<<< HEAD
+                            <tbody>
+=======
                               <tbody>
+>>>>>>> 95f966c442b5365b7108d947ecc29fd527e3fc00
                             <tr><td>1</td>
                                 <td>test</td>
                                 <td>test</td>

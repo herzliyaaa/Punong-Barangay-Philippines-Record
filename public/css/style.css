@@ -15,6 +15,62 @@ h2 {
 }
 
 :root {
+<<<<<<< HEAD
+    --main-bg-color: #948be9;
+    --main-text-color: #00688B;
+    --second-text-color: #50A6C2;
+    --second-bg-color: #ebebf5;
+  }
+
+
+ .coverlogo{
+   background-image: url(../img/logo-transparent.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+  
+  
+  
+  .doe {
+    color: black;
+  }
+  
+  .john {
+    color: black;
+  }
+  
+  
+  .primary-text {
+    color: var(--main-text-color);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .second-text {
+    color: var(--second-text-color);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .primary-bg {
+    background-color: var(--main-bg-color);
+    
+  }
+  
+  .secondary-bg {
+    background-color: var(--second-bg-color);
+    
+  }
+  
+  .rounded-full {
+    border-radius: 100%;
+  }
+  
+  #wrapper {
+    overflow-x: hidden;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); 
+=======
   --main-bg-color: #948be9;
   --main-text-color: #00688B;
   --second-text-color: #50A6C2;
@@ -77,6 +133,7 @@ h2 {
   /* background-color: #2a2a72; */
   background-image: linear-gradient(315deg, #1c2894 0%, #78b9df 74%);
   /* background-image: linear-gradient(315deg, #183153 0%, #63b2e6 74%); */
+>>>>>>> 95f966c442b5365b7108d947ecc29fd527e3fc00
   font-size: 1.2rem;
 }
 
@@ -291,6 +348,14 @@ select {
   display: flex;
   flex-direction: row;
   
+<<<<<<< HEAD
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  
+=======
+
 }
 
 .left-input {
@@ -310,3 +375,4 @@ margin: 20px 20px 20px 20px;
   margin: 20px 20px 20px 20px;
   justify-content: end;
 }
+>>>>>>> 95f966c442b5365b7108d947ecc29fd527e3fc00
