@@ -71,7 +71,7 @@ include "../../db_connection.php";
                                 <th scope="col">Suffix</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Barangay Hall Tel No</th>
-                                <th></th>
+                                <th ></th>
                             </tr>
                         </thead>
                      

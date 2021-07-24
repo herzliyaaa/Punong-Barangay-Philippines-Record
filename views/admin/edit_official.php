@@ -61,6 +61,7 @@
             <form action="edit_official_function.php" method="post" enctype="multipart/form-data"> 
                 <div class="officials-input">
 
+                <div class="left-input">
                 <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                     <div class="add-input">
                         <h5>First Name *:</h5>
@@ -78,7 +79,7 @@
                     </div>
 
                     <div class="add-input">
-                        <h5>Suffix *:</h5>
+                        <h5>Suffix :</h5>
                         <input type="text" name="suffix" value="<?php echo $row['suffix']; ?>">
                     </div>
 
@@ -87,7 +88,10 @@
                         <input type="text" name="position" value="<?php echo $row['position']; ?>">
                     </div>
 
-                    
+                </div>
+
+
+                <div class="right-input">
 
                     <div class="add-input">
                         <h5>Region *:</h5>
@@ -139,12 +143,16 @@
                         <input type="text" name="email" value="<?php echo $row['email']; ?>">
                     </div>
 
+                </div>
+
+                <div class="outer-right-input">
                     <div class="add-input">
                         <h5>Barangay Hall Phone Number *:</h5>
                         <input type="text" name="barangay_hall_tel_no" value="<?php echo $row['barangay_hall_tel_no']; ?>">
                     </div>
 
                     <button class="save-btn" name="edit_official_btn">Save</button>
+                </div>
                 </div>
 
             </form>

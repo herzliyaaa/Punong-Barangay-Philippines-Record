@@ -1,4 +1,5 @@
-<?php include "../../db_connection.php";
+<?php include "../../db_connection.php"; 
+
 
 $request=$_REQUEST;
 $col =array(
@@ -53,7 +54,7 @@ while($row=mysqli_fetch_array($query)){
     $subdata[]=$row[6]; //suffix 
     $subdata[]=$row[7]; //email
     $subdata[]=$row[8]; //barangay_hall_tell_no   
-    $subdata[]="<a href=official_details.php?id=$id>view</a>" ; 
+    $subdata[]="<button class=  'view-btn' ><a href=official_details.php?id=$id>view</a></button>" ; 
     $data[]=$subdata;
 }
 

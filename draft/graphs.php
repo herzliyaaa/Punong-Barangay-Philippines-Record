@@ -60,101 +60,49 @@
             <div class="container-fluid px-4">
                 <div class="row g-3 my-2">
 
-                    <div class="col-md-3">
+                    <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials </h3>
 
-
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
-                      
-                            <!-- <i class="fas fa-users fs-4 me-1"></i> -->
-                            <h2> Total Population of BRGY Officials: </h2>
-                 
-
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
                             <div class="pb-head">
                                 <h4> Punong Barangay: </h4>
                             </div>
-                            <!--                        
-                        <div class="sbm-head"><h3> Sangguniang Barangay Member:  </h3> </div>
-                        <h3> SK Chairperson:  </h3> -->
                         </div>
-
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
-                           
-                        <div class="sbm-head">
-                        <h4> Sangguniang Barangay Member: </h4>
-                        </div>
-                        </div>
-
-
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
-                        
-                        <div class="sk-head">
-                        <h4> SK Chairperson:  </h4>
-                        </div>
-                        </div>
-
                     </div>
 
-                    <!-- <div class="col-md-3">
+
+
+                    <div class="col-md-6">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-
-                        </div>
-                    </div> -->
-
-                    <div class="col-md-5">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-
-
-
-                            <canvas id="dash_Chart"></canvas>
 
                         </div>
                     </div>
 
                 </div>
 
-                <div class="row my-5">
-                    <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials According to its position</h3>
-                    <div class="col-md-12">
+
+                <div class="row g-3 my-2">
+                  
+                    <div class="col-md-6">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <canvas id="canvas"></canvas>
+
 
                         </div>
                     </div>
+
+                    <div class="col-md-6">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+
+
+                        </div>
+                    </div>
+
+
                 </div>
 
-               
 
 
-                <div class="col">
-                    <!-- <table class="table bg-white rounded shadow-sm  table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col" width="50">#</th>
-                                <th scope="col">Region</th>
-                                <th scope="col">Province</th>
-                                <th scope="col">City</th>
-                                <th scope="col">Barangay</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>test</td>
-                                <td>test</td>
-                                <td>test</td>
-                                <td>test</td>
-                            </tr>
-                        </tbody>
-                    </table> -->
-                </div>
+
             </div>
 
         </div>
