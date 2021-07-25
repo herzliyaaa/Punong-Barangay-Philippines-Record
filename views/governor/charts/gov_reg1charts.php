@@ -82,16 +82,21 @@
 
         },
     });
-</script>
+
+    </script>
 
 
-<script>
-    var barChartData = {
-        labels: [
-            "Ilocos Norte", "Ilocos Sur", "Pangasinan", "La Union"
+    <script>
+    var dashctx2 = document.getElementById("canvas2");
+    var canvas2 = new Chart(dashctx2, {
+        type: 'bar',
+        data: {
 
-        ],
-        datasets: [{
+            labels: [ "Ilocos Sur", "Ilocos Norte",  "Pangasinan", "La Union"
+
+            ],
+
+            datasets: [{
                 label: "Punong Barangay",
                 backgroundColor: "pink",
                 borderColor: "red",
@@ -134,34 +139,34 @@
             }
 
         ]
-    };
+    },
 
-    var chartOptions = {
-        responsive: true,
-        maintainAspectRatio: true,
-        legend: {
-            position: "bottom"
-        },
+        options: {
 
-        scales: {
+            responsive: true,
+            maintainAspectRatio: false,
+
+
+            legend: {
+                position: 'right',
+                display: true
+            },
+
+            scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true
                 }
             }]
         }
-    }
 
-    window.onload = function() {
-        var ctx = document.getElementById("canvas2");
-        window.myBar = new Chart(ctx, {
-            type: "bar",
-            data: barChartData,
-            options: chartOptions
-        });
-    };
+        }
+    });
 
 
-   
-    
+
+
+
+
 </script>
+

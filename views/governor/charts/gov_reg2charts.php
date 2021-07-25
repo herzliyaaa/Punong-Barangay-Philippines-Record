@@ -69,18 +69,25 @@
             }]
         },
         options: {
-
+            animation: {
+            duration: 0 // general animation time
+        },
+        hover: {
+            animationDuration: 0 // duration of animations when hovering an item
+        },
+       
+   
             responsive: true,
             maintainAspectRatio: false,
 
-
+        },
             legend: {
                 position: 'right',
                 display: true
             }
 
 
-        },
+       
     });
 
 
@@ -148,7 +155,9 @@
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    maxRotation: 0,
+                    autoSkip: true,
                 }
             }]
         }
