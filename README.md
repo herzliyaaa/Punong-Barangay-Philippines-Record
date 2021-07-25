@@ -4,7 +4,6 @@
 
 The things you need before running the system.
 
-* PHP 
 * XAMPP SERVER
 * WEB BROWSER
 
@@ -26,7 +25,4 @@ Dataset: https://www.kaggle.com/codeblu3/philippines-barangay
 3. Now to run your code, open localhost/Punong-Barangay-Philippines-Record/ in your browser. 
 
 
-
-### Git Collab
-[Click here for the instructions](https://github.com/herzliyaaa/Punong-Barangay-Philippines-Record/blob/master/gitcollab.md)
 
