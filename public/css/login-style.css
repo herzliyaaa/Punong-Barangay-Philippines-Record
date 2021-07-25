@@ -12,10 +12,10 @@
 }  */
 
 body {
-  /* background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71) !important; */
-
-  background: linear-gradient(to right, #1cb5e0, #010129);
+  /* background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71) !important;  */
+  background: linear-gradient(to right, #FFFDE4, #005AA7);
 }
+
 
 a {
   text-decoration: none;

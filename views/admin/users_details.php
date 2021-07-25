@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="../../public/css/style.css" />
-
+    <link rel="stylesheet" href="../../public/css/user-style.css" />
 </head>
 
 
@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
                 <div class="d-flex align-items-center">
                     <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="fs-3 fw-bold m-0">Add Barangay Officials</h2>
+                    <h2 class="fs-3 fw-bold m-0">View User Details</h2>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,40 +57,45 @@
                 <button class="back-btn">Back</button>
             </a>
                    
-            <form action="./edit_official_function.php" method="post" enctype="multipart/form-data">
-                <div class="officials-input">
+            <form action="./edit_official_function.php" method="post" enctype="multipart/form-data" class="user-view-form">
+                <div class="user-view-input">
 
-                <div class="add-input">
-                        <h5>ID :</h5> <h6><?php echo $row['id']; ?></h6>
+                <div class="view-input">
+                        <h3>ID :</h3> <h6><?php echo $row['id']; ?></h6>
                         
                         
                     </div>
 
-                    <div class="add-input">
-                        <h5>User Name :</h5>
+                    <div class="view-input">
+                        <h3>User Name :</h3>
                         <h6><?php echo $row['user_name']; ?></h6>
                         
                     </div>
 
-                    <div class="add-input">
-                        <h5>Password :</h5>
+                    <div class="view-input">
+                        <h3>Password :</h3>
                         <h6><?php echo $row['password']; ?></h6>
                         
                     </div>
 
-                    <div class="add-input">
-                        <h5>Name :</h5>
+                    <div class="view-input">
+                        <h3>Name :</h3>
                         <h6><?php echo $row['name']; ?></h6>
                        
                     </div>
 
-                    <div class="add-input">
-                        <h5>role :</h5>
+                    <div class="view-input">
+                        <h3>Role :</h3>
                         <h6><?php echo $row['role']; ?></h6>
                       
                     </div>
-                    <a href="edit_user.php?id=<?php echo $row['id']?> " class="btn btn-primary">edit</a>
 
+                    <div class="view-input">
+                        
+                    <button class= "edit2-btn">
+                    <a href="edit_user.php?id=<?php echo $row['id']?> ">Edit</a>
+                    </button>
+                    </div>
                 </div>
 
             </form>

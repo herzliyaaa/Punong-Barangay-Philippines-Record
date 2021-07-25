@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
-  
+
 }
 
 h2 {
@@ -31,102 +31,41 @@ h4 {
 }
 
 :root {
-    --main-bg-color: #948be9;
-    --main-text-color: #00688B;
-    --second-text-color: #50A6C2;
-    --second-bg-color: #ebebf5;
-  }
-
-
- .coverlogo{
-   background-image: url(../img/logo-transparent.png);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
- }
-  
- .row.my-5 {
-   margin: 0rem !important;
- }
-  
-  .doe {
-    color: black;
-  }
-  
-  .john {
-    color: black;
-  }
-  
-  
-  .primary-text {
-    color: var(--main-text-color);
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .second-text {
-    color: var(--second-text-color);
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .primary-bg {
-    background-color: var(--main-bg-color);
-    
-  }
-  
-  .secondary-bg {
-    background-color: var(--second-bg-color);
-    
-  }
-  
-  .rounded-full {
-    border-radius: 100%;
-  }
-  
-  #wrapper {
-    overflow-x: hidden;
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); 
   --main-bg-color: #948be9;
   --main-text-color: #00688B;
-  --second-text-color: #50A6C2;
+  --second-text-color: #f8f8f8;
   --second-bg-color: #ebebf5;
 }
 
 
-
-
-.coverlogo::before {
-  content: "";
-  background-image: url(../img/phbarangay-logo.png);
+.coverlogo {
+  background-image: url(../img/logo-transparent.png);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-  top: -40%;
-  right: 0px;
-  bottom: 0;
-  left: 0%;
-  opacity: 0.3;
+  background-attachment: fixed;
 }
 
-
-
+.row.my-5 {
+  margin: 0rem !important;
+}
 
 .doe {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .john {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 
 .primary-text {
-  color: var(--main-text-color);
-  font-family: Poppins, sans-serif;
+  color: var(--second-bg-color);
+  font-family: "Poppins", sans-serif;
 }
 
 .second-text {
-  color: var(--second-text-color);
+  color: var(--second-bg-color);
   font-family: "Poppins", sans-serif;
 }
 
@@ -146,11 +85,29 @@ h4 {
 
 #wrapper {
   overflow-x: hidden;
-  /* background-color: #2a2a72; */
-  background-image: linear-gradient(315deg, #1c2894 0%, #78b9df 74%);
-  /* background-image: linear-gradient(315deg, #183153 0%, #63b2e6 74%); */
+  background: linear-gradient(to right, #FFFDE4, #005AA7) !important;
   font-size: 1.2rem;
 }
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+
+}
+
+/* .coverlogo::before {
+  content: "";
+  background-image: url(../img/phbarangay-logo.png);
+  background-size: cover;
+  position: absolute;
+  top: -40%;
+  right: 0px;
+  bottom: 0;
+  left: 0%;
+  opacity: 0.3;
+} */
+
+
 
 
 #sidebar-wrapper {
@@ -225,8 +182,9 @@ h4 {
   justify-content: center;
   align-items: center;
   position: relative;
-  
+
 }
+
 #officials {
   width: 100%;
   font-size: 16px;
@@ -277,7 +235,7 @@ section {
   right: 30px;
 }
 
-.dataTables_wrapper.dt-bootstrap4.no-footer {
+/* .dataTables_wrapper.dt-bootstrap4.no-footer {
 margin-top: 70px;
 margin-left: 20px;
 margin-right: 20px;
@@ -288,25 +246,25 @@ margin-right: 20px;
 display: flex;
 margin: auto;
 align-items: center;
-justify-content: center;
-  /* position: absolute;
+justify-content: center; */
+/* position: absolute;
   top: 80px;
   right: 30px; */
- 
-}
+
+
 /* #officials_length.dataTables_length label {
  
 }
  */
 
- /* ADD OFFICIALS  */
+/* ADD OFFICIALS  */
 
 input {
   width: 300px;
   margin: 10px 10px 20px 10px;
   height: 40px;
   border-color: #06063d;
-  border-radius: 12px; 
+  border-radius: 12px;
   background-color: whitesmoke;
   outline: none;
 }
@@ -322,7 +280,7 @@ select {
   height: 40px;
   border-color: #06063d;
   border-width: 2px;
-  border-radius: 12px; 
+  border-radius: 12px;
 }
 
 .back-btn {
@@ -360,7 +318,9 @@ select {
 
 }
 
-.view-btn{
+
+
+.view-btn {
   background-color: #2a2a72;
   color: white;
   font-family: Poppins, sans-serif;
@@ -370,10 +330,10 @@ select {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
-  
+
 }
 
-.view-btn:hover{
+.view-btn:hover {
   background-color: #3d3d41;
   color: white;
   font-family: Poppins, sans-serif;
@@ -383,7 +343,7 @@ select {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
-  
+
 }
 
 .view-btn a {
@@ -392,29 +352,89 @@ select {
   border-radius: 5px;
 }
 
-.view-btn a:hover{
+.view-btn a:hover {
   text-decoration: none;
   color: #ffffff;
   border-radius: 5px;
 }
 
+.del-btn {
+  background-color: #2a2a72;
+  color: white;
+  font-family: Poppins, sans-serif;
+  border-radius: 12px;
+  width: 100px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.close-btn {
+  background-color: #2a2a72;
+  color: white;
+  font-family: Poppins, sans-serif;
+  border-radius: 12px;
+  width: 100px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.edit_official_btn {
+  background-color: #2a2a72;
+  color: white;
+  font-family: Poppins, sans-serif;
+  border-radius: 12px;
+  width: 100px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.edit_official_btn a {
+  
+  color: white;
+  text-decoration: none;
+}
+
+
+.delete-btn {
+  background-color: #2a2a72;
+  color: white;
+  font-family: Poppins, sans-serif;
+  border-radius: 12px;
+  width: 100px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.delete-btn a {
+
+  color: white;
+  text-decoration: none;
+}
 
 .officials-input {
   display: flex;
   flex-direction: row;
 }
 
-  #wrapper.toggled #sidebar-wrapper {
-      margin-left: -15rem;
-    }
-  
-  
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -15rem;
+}
+
+
 
 
 
 .left-input {
   display: block;
-margin: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
   justify-content: flex-start;
 }
 

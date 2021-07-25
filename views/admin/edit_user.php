@@ -16,7 +16,7 @@
     <title>Barangay Officials Philippines Record</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="../../public/css/style.css" />
+    <link rel="stylesheet" href="../../public/css/user-style.css" />
 
 </head>
 
@@ -30,7 +30,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
                 <div class="d-flex align-items-center">
                     <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="fs-3 fw-bold m-0">Add Barangay Officials</h2>
+                    <h2 class="fs-3 fw-bold m-0">Edit User</h2>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,13 +53,13 @@
                 </div>
             </nav>
         
-                <section>
+                <section class="user-section">
             <a href="users_details.php?id=<?php echo $id?>">
                 <button class="back-btn">Back</button>
             </a>
                    
-            <form action="edit_user_function.php" method="post" enctype="multipart/form-data"> 
-                <div class="officials-input">
+            <form action="edit_user_function.php" method="post" enctype="multipart/form-data" class ="user-form"> 
+                <div class="infos">
 
                 <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                     <div class="add-input">
@@ -82,8 +82,9 @@
                         <input type="text" name="role" value="<?php echo $row['role']; ?>">
                     </div>
 
-                    
-                    <button class="save-btn" name="edit_user_btn">Save</button>
+                    <div class="save">
+                    <button class="edit-btn" name="edit_user_btn">Save</button>
+                    </div>
                 </div>
 
             </form>

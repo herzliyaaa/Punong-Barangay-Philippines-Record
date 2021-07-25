@@ -136,9 +136,9 @@ while ($row = mysqli_fetch_array($sql)) {
 
                                 </div>
 
-
-                                <a href="edit_official.php?id=<?php echo $row['id'] ?> " class="btn btn-primary">Edit</a>
-
+                                <button class= "edit_official_btn">
+                                <a href="edit_official.php?id=<?php echo $row['id'] ?> ">Edit</a>
+                                </button>
 
                                 <?php include('modal.php'); ?>
                             </div>

@@ -1,5 +1,20 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   
+    <link rel="stylesheet" href="../../public/css/style.css" />
+  
+</head>
+
+<body>
+
+
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" class="delete-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Delete
 </button>
 
@@ -8,7 +23,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel" >Delete Official</h5>
+        <h5 class="modal-title" id="staticBackdropLabel"  >Delete Official</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -16,14 +31,14 @@
     
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="delete_official.php?id=<?php echo $row['id']?> ">delete</a>
+        <button type="button" class="close-btn" data-bs-dismiss="modal">Close</button>
+        <button class="delete-btn"><a href="delete_official.php?id=<?php echo $row['id']?> ">Delete</a></button>
       </div>
     </div>
   </div>
 </div>
 
-
+</body>
 <script>
 var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
@@ -32,3 +47,5 @@ myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
 </script>
+
+
