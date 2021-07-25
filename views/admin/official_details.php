@@ -42,8 +42,7 @@ while ($row = mysqli_fetch_array($sql)) {
                                     <i class="doe fas fa-user me-2"></i>John Doe
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    
                                     <li><a class="dropdown-item" href="#">Logout</a></li>
                                 </ul>
                             </li>
