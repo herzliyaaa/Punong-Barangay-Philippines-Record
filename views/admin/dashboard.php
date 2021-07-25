@@ -85,7 +85,7 @@
                         <h3> SK Chairperson:  </h3> -->
                         </div>
 
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center ">
                            
                         <div class="sbm-head">
                         <h4> Sangguniang Barangay Member: </h4>
@@ -93,7 +93,7 @@
                         </div>
 
 
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center">
                         
                         <div class="sk-head">
                         <h4> SK Chairperson:  </h4>

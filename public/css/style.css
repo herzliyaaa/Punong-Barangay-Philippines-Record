@@ -480,6 +480,14 @@ canvas#dash_Chart {
 
 }
 
+canvas#bar_ilocos_norte {
+  height: 250px !important;
+}
+
+canvas#pie_ilocos_norte {
+  height: 250px !important;
+}
+
 
 
 .pb-head {
