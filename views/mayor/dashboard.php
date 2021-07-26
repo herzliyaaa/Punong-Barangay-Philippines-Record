@@ -83,7 +83,7 @@
 
                     <div class="col-md-3">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-
+                        <canvas id="pie_ilocos_sur"></canvas>
                         </div>
                     </div>
 
@@ -91,7 +91,7 @@
                     <div class="col-md-3">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
-
+                        <canvas id="bar_ilocos_sur"></canvas>
 
                            
                         </div>
@@ -104,7 +104,7 @@
                   <div class="col-md-3">
                       <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
-                      <!-- <canvas id="canvas3"></canvas> -->
+                   
                       </div>
                   </div>
 

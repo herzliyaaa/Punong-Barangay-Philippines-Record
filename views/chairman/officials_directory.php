@@ -57,7 +57,7 @@ include "../../db_connection.php";
                     <button class="add-official-btn"> Add Official </button>
                     </a>
                 </div>
-                <div class="col" width="100">
+                <div class="table-responsive" style="width: 95%;">
                     <table id="officials" class="table table-striped table-bordered">
                         <thead>
                             <tr>

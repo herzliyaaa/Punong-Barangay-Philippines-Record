@@ -296,3 +296,107 @@ if ($_SESSION['role'] == 'Admin') { ?>
     </script>
 
 <?php } ?>
+
+
+
+<!-- for Brgy Officials -->
+
+<?php
+if ($_SESSION['role'] == 'Governor') { ?>
+    <script>
+        document.getElementById("congressman-brgy-off").style.display = "none";
+    </script>
+<?php } ?>
+
+
+<?php
+if ($_SESSION['role'] == 'Chairman') { ?>
+    <script>
+        document.getElementById("congressman-brgy-off").style.display = "none";
+    </script>
+<?php } ?>
+
+<?php
+if ($_SESSION['role'] == 'Mayor') { ?>
+    <script>
+        document.getElementById("congressman-brgy-off").style.display = "none";
+    </script>
+<?php } ?>
+
+
+<?php
+if ($_SESSION['role'] == 'Admin') { ?>
+    <script>
+        document.getElementById("congressman-brgy-off").style.display = "none";
+    </script>
+
+<?php } ?>
+
+
+
+<!-- for Brgy Officials -->
+
+<?php
+if ($_SESSION['role'] == 'Governor') { ?>
+    <script>
+        document.getElementById("mayor-brgy-off").style.display = "none";
+    </script>
+<?php } ?>
+
+
+<?php
+if ($_SESSION['role'] == 'Chairman') { ?>
+    <script>
+        document.getElementById("mayor-brgy-off").style.display = "none";
+    </script>
+<?php } ?>
+
+<?php
+if ($_SESSION['role'] == 'Congressman') { ?>
+    <script>
+        document.getElementById("mayor-brgy-off").style.display = "none";
+    </script>
+<?php } ?>
+
+
+<?php
+if ($_SESSION['role'] == 'Admin') { ?>
+    <script>
+        document.getElementById("mayor-brgy-off").style.display = "none";
+    </script>
+
+<?php } ?>
+
+
+<!-- for Brgy Officials -->
+
+<?php
+if ($_SESSION['role'] == 'Congressman') { ?>
+    <script>
+        document.getElementById("gov-brgy-off").style.display = "none";
+    </script>
+<?php } ?>
+
+
+<?php
+if ($_SESSION['role'] == 'Chairman') { ?>
+    <script>
+        document.getElementById("gov-brgy-off").style.display = "none";
+    </script>
+<?php } ?>
+
+<?php
+if ($_SESSION['role'] == 'Mayor') { ?>
+    <script>
+        document.getElementById("gov-brgy-off").style.display = "none";
+    </script>
+<?php } ?>
+
+
+<?php
+if ($_SESSION['role'] == 'Admin') { ?>
+    <script>
+        document.getElementById("gov-brgy-off").style.display = "none";
+    </script>
+
+<?php } ?>

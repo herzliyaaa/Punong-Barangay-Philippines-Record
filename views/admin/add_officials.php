@@ -35,7 +35,7 @@
                                 <i class="doe fas fa-user me-2"></i>John Doe
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                
+
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </li>
@@ -68,7 +68,7 @@
                             </div>
 
                             <div class="add-input">
-                                <h5>Suffix *:</h5>
+                                <h5>Suffix :</h5>
                                 <input type="text" name="suffix">
                             </div>
 
@@ -81,13 +81,7 @@
                         <div class="right-input">
                             <div class="add-input">
                                 <h5>Region *:</h5>
-                                <select name="region" id="region">
-                                    <option value="" selected disabled hidden>--</option>
-                                    <option value="Region 1">Region 1</option>
-                                    <option value="Region 2">Region 2</option>
-                                    <option value="Region 3">Region 3</option>
-                                    <option value="Region 4">Region 4</option>
-                                </select>
+                                <input type="text" name="region">
                             </div>
 
 
@@ -95,62 +89,44 @@
 
                             <div class="add-input">
                                 <h5>Province *:</h5>
-                                <select name="province" id="province">
-                                    <option value="" selected disabled hidden>--</option>
-                                    <option value="Region 1">Region 1</option>
-                                    <option value="Region 2">Region 2</option>
-                                    <option value="Region 3">Region 3</option>
-                                    <option value="Region 4">Region 4</option>
-                                </select>
+                                <input type="text" name="province">
                             </div>
 
 
                             <div class="add-input">
                                 <h5>City/Municipality *:</h5>
-                                <select name="city" id="city">
-                                    <option value="" selected disabled hidden>--</option>
-                                    <option value="Region 1">Region 1</option>
-                                    <option value="Region 2">Region 2</option>
-                                    <option value="Region 3">Region 3</option>
-                                    <option value="Region 4">Region 4</option>
-                                </select>
+                                <input type="text" name="city">
                             </div>
 
                             <div class="add-input">
                                 <h5>Barangay *:</h5>
-                                <select name="barangay" id="barangay">
-                                    <option value="" selected disabled hidden>--</option>
-                                    <option value="Region 1">Region 1</option>
-                                    <option value="Region 2">Region 2</option>
-                                    <option value="Region 3">Region 3</option>
-                                    <option value="Region 4">Region 4</option>
-                                </select>
+                                <input type="text" name="barangay">
                             </div>
 
                             <div class="add-input">
                                 <h5>Email Address *:</h5>
                                 <input type="text" name="email">
                             </div>
+                        </div>
+                        <div class="outer-right-input">
+                            <div class="add-input">
+                                <h5>Barangay Hall Phone Number *:</h5>
+                                <input type="text" name="barangay_hall_tel_no">
                             </div>
-                            <div class="outer-right-input">
-                                <div class="add-input">
-                                    <h5>Barangay Hall Phone Number *:</h5>
-                                    <input type="text" name="barangay_hall_tel_no">
-                                </div>
-                            
+
 
                             <button class="save-btn" name="add_official_btn">Save</button>
-                            </div>
                         </div>
                     </div>
-
-                </form>
-
-            </section>
-
-
-
         </div>
+
+        </form>
+
+        </section>
+
+
+
+    </div>
     </div>
 
 </body>

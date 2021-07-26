@@ -473,7 +473,7 @@ canvas#canvas4 {
 }
 
 canvas#dash_Chart {
-  height: 200px !important;
+  height: 240px !important;
 
 }
 
@@ -485,7 +485,14 @@ canvas#pie_ilocos_norte {
   height: 250px !important;
 }
 
+canvas#pie_ilocos_sur{
+  height: 250px !important;
+}
 
+
+canvas#bar_ilocos_sur{
+  height: 250px !important;
+}
 
 .pb-head {
   display: flex;

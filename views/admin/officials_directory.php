@@ -29,7 +29,7 @@ include "../../db_connection.php";
         <div id="page-content-wrapper">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
                 <div class="d-flex align-items-center">
-                <i class="fas fa-align-left fs-4 me-3" id="menu-toggle"></i>
+                    <i class="fas fa-align-left fs-4 me-3" id="menu-toggle"></i>
                     <h2>Officials Directory</h2>
                 </div>
 
@@ -44,7 +44,7 @@ include "../../db_connection.php";
                                 <i class="doe fas fa-user me-2"></i>John Doe
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                               
+
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </li>
@@ -54,7 +54,7 @@ include "../../db_connection.php";
 
             <section>
                 <div class="top-section"> <a href="add_officials.php">
-                    <button class="add-official-btn"> Add Official </button>
+                        <button class="add-official-btn"> Add Official </button>
                     </a>
                 </div>
                 <div class="table-responsive" style="width: 95%;">
@@ -62,6 +62,9 @@ include "../../db_connection.php";
                         <thead>
                             <tr>
                                 <th scope="col">ID</th>
+                                <th scope="col">Region</th>
+                                <th scope="col">Province</th>
+                                <th scope="col">City</th>
                                 <th scope="col">Barangay</th>
                                 <th scope="col">Position</th>
                                 <th scope="col">Last Name</th>
@@ -70,16 +73,16 @@ include "../../db_connection.php";
                                 <th scope="col">Suffix</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Barangay Hall Tel No</th>
-                                <th ></th>
+                                <th></th>
                             </tr>
                         </thead>
-                     
+
 
                     </table>
                 </div>
 
             </section>
-            
+
             <script>
                 $(document).ready(function() {
                     var dataTable = $('#officials').DataTable({

@@ -86,12 +86,13 @@
 
 
             legend: {
-                position: 'right',
-                display: true
+                position: 'left',
+                display: true,
+                align: 'start'
             }
 
 
-        },
+        }
     });
 </script>
 

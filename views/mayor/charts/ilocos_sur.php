@@ -1,11 +1,11 @@
 
 <script>
-    var dashreg2ctx = document.getElementById("canvas3");
-    var canvas3 = new Chart(dashreg2ctx, {
+    var dashctx3 = document.getElementById("pie_ilocos_sur");
+    var pie_ilocos_sur = new Chart(dashctx3, {
         type: 'pie',
         data: {
 
-            labels: [ "Cagayan", "Quirino", "Nueva Vizcaya", "Isabela", "Batanes"
+            labels: [ "Alilem", "Banayoyo", "Burgos", "Cabugao", "Cervantes"
 
             ],
 
@@ -13,11 +13,11 @@
                 label: " Barangay Officials Population per Province",
                 data: [
 
-                    <?php echo $cag_count['cag_cnt']; ?>,
-                    <?php echo $qu_count['qu_cnt']; ?>,
-                    <?php echo $nv_count['nv_cnt']; ?>,
-                    <?php echo $isabela_count['isabela_cnt']; ?>,
-                    <?php echo $batanes_count['batanes_cnt']; ?>
+                    <?php echo $alilem_count['alilem_cnt']; ?>,
+                    <?php echo $banayoyo_count['banayoyo_cnt']; ?>,
+                    <?php echo $burgos_count['burgos_cnt']; ?>,
+                    <?php echo $cabugao_count['cabugao_cnt']; ?>,
+                    <?php echo $cervantes_count['cervantes_cnt']; ?>
 
 
 
@@ -93,23 +93,28 @@
 
 </script>
 
-<script>
-    var barChartData2 = {
-        labels: [
-            "Cagayan", "Quirino", "Nueva Vizcaya", "Isabela", "Batanes"
 
-        ],
-        datasets: [{
+<script>
+    var dashctx4 = document.getElementById("bar_ilocos_sur");
+    var bar_ilocos_sur = new Chart(dashctx4, {
+        type: 'bar',
+        data: {
+
+            labels: [ "Alilem", "Banayoyo", "Burgos", "Cabugao", "Cervantes"
+
+            ],
+
+            datasets: [{
                 label: "Punong Barangay",
                 backgroundColor: "pink",
                 borderColor: "red",
                 borderWidth: 1,
                 data: [
-                    <?php echo $cagpb['cagayan_pb_cnt']; ?>,
-                    <?php echo $qupb['quirino_pb_cnt']; ?>,
-                    <?php echo $nvpb['nv_pb_cnt']; ?>,
-                    <?php echo $isabelapb['isabela_pb_cnt']; ?>,
-                    <?php echo $batanespb['batanes_pb_cnt']; ?>
+                    <?php echo $alilempb['alilem_pb_cnt']; ?>,
+                    <?php echo $banayoyopb['banayoyo_pb_cnt']; ?>,
+                    <?php echo $burgospb['burgos_pb_cnt']; ?>,
+                    <?php echo $cabugaopb['cabugao_pb_cnt']; ?>,
+                   
                 ]
             },
             {
@@ -119,12 +124,11 @@
                 borderWidth: 1,
                 data: [
 
-                    <?php echo $cagsbm['cagayan_sbm_cnt']; ?>,
-                    <?php echo $qusbm ['quirino_sbm_cnt']; ?>,
-                    <?php echo $nvsbm['nv_smb_cnt']; ?>,
-                    <?php echo $isabelasbm['isabela_smb_cnt']; ?>,
-                    <?php echo $batanessbm['batanes_smb_cnt']; ?>
-
+                    <?php echo $alilemsbm['alilem_sbm_cnt']; ?>,
+                    <?php echo $banayoyosbm ['banayoyo_sbm_cnt']; ?>,
+                    <?php echo $burgossbm['burgos_smb_cnt']; ?>,
+                    <?php echo $cabugaosbm['cabugao_smb_cnt']; ?>
+                  
                 ]
             },
             {
@@ -134,25 +138,30 @@
                 borderWidth: 1,
                 data: [
 
-                    <?php echo $cagsk['cagayan_sk_cnt']; ?>,
-                    <?php echo $qusk['quirino_sk_cnt']; ?>,
-                    <?php echo $nvsk['nv_sk_cnt']; ?>,
-                    <?php echo $isabelask['isabela_sk_cnt']; ?>,
-                    <?php echo $batanessk['batanes_sk_cnt']; ?>
+                    <?php echo $alilemsk['alilem_sk_cnt']; ?>,
+                    <?php echo $banayoyosk['banayoyo_sk_cnt']; ?>,
+                    <?php echo $burgossk_is['burgos_sk_cnt']; ?>,
+                    <?php echo $cabugaosk['cabugao_sk_cnt']; ?>
+                  
+
                 ]
             }
 
         ]
-    };
+    },
 
-    var chartOptions2 = {
-        responsive: true,
-        maintainAspectRatio: false,
-        legend: {
-            position: "bottom"
-        },
+        options: {
 
-        scales: {
+            responsive: true,
+            maintainAspectRatio: false,
+
+
+            legend: {
+                position: 'right',
+                display: true
+            },
+
+            scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -161,18 +170,11 @@
                 }
             }]
         }
-    }
 
-    window.onload = function() {
-        var ctx2 = document.getElementById("canvas4").getContext("2d");
-        window.myBar = new Chart(ctx2, {
-            type: "bar",
-            data: barChartData2,
-            options: chartOptions2
-        });
-    };
+        }
+    });
 
 
-   
-    
+
+
 </script>

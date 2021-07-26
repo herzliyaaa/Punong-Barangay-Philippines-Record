@@ -1,13 +1,10 @@
-
-
-
 <script>
     var dashctx = document.getElementById("pie_ilocos_norte");
     var pie_ilocos_norte = new Chart(dashctx, {
         type: 'pie',
         data: {
 
-            labels: [ "Adams", "Bacarra",  "Badoc", "Burgos", "Carasi"
+            labels: ["Adams", "Bacarra", "Badoc", "Burgos", "Carasi"
 
             ],
 
@@ -15,7 +12,7 @@
                 label: " Barangay Officials Population per Region",
                 data: [
                     <?php echo $adams_count['adams_cnt']; ?>,
-                    <?php echo $bacarra_count['bacarra_cnt']; ?>,    
+                    <?php echo $bacarra_count['bacarra_cnt']; ?>,
                     <?php echo $badoc_count['badoc_cnt']; ?>,
                     <?php echo $burgos_count['burgos_cnt']; ?>,
                     <?php echo $carasi_count['carasi_cnt']; ?>
@@ -24,7 +21,7 @@
                 ],
 
                 backgroundColor: [
-                   
+
                     '#d9ed92',
                     '#b5e48c',
                     '#99d98c',
@@ -79,13 +76,12 @@
 
         },
     });
+</script>
 
-    </script>
 
-
-    <script>
-    var dashctx2 = document.getElementById("bar_ilocos_norte");
-    var bar_ilocos_norte = new Chart(dashctx2, {
+<script>
+    var ilocos_norte_ctx = document.getElementById("bar_ilocos_norte");
+    var bar_ilocos_norte = new Chart(ilocos_norte_ctx, {
         type: 'bar',
         data: {
 
