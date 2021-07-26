@@ -16,7 +16,7 @@ h2 {
 
 h3 {
   font-family: Poppins, sans-serif !important;
-  font-size: 26px !important;
+  font-size: 1.5rem !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
   color: rgb(41, 40, 40);
@@ -434,19 +434,19 @@ select {
 
 .left-input {
   display: block;
-  margin: 20px 20px 20px 20px;
+  margin: 100px 20px 20px 20px;
   justify-content: flex-start;
 }
 
 .right-input {
   display: block;
-  margin: 20px 20px 30px 30px;
+  margin: 100px 20px 30px 20px;
   justify-content: center;
 }
 
 .outer-right-input {
   display: block;
-  margin: 20px 20px 20px 20px;
+  margin: 100px 20px 20px 20px;
   justify-content: end;
 }
 
