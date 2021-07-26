@@ -16,6 +16,17 @@ while ($row = mysqli_fetch_array($sql)) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="../../public/css/style.css" />
 
+<style type="text/css">
+    .add-input {
+        padding: 4%;
+    }
+
+    h5 {
+        color: #2a2a72;
+    }
+
+</style>
+
     </head>
 
 
@@ -59,38 +70,36 @@ while ($row = mysqli_fetch_array($sql)) {
                         <div class="officials-input">
                             <div class="left-input">
                                 <div class="add-input">
-                                    <h3>ID : <?php echo $row['id']; ?></h3>
+                                    <h5>ID:</h5>
+                                    <h3><?php echo $row['id']; ?></h3>
 
+                                </div>
+                              
+                                <div class="add-input">
+                                    <h5>First Name:</h5>
+                                    <h3><?php echo $row['first_name']; ?></h3>
 
 
                                 </div>
-
+                             
                                 <div class="add-input">
-                                    <h3>First Name : <?php echo $row['first_name']; ?></h3>
-
-
+                                    <h5>Middle Name:</h5>
+                                    <h3><?php echo $row['middle_name']; ?></h3>
                                 </div>
-
+                         
                                 <div class="add-input">
-                                    <h3>Middle Name : <?php echo $row['middle_name']; ?></h3>
-
-
+                                    <h5>Last Name:</h5>
+                                    <h3><?php echo $row['last_name']; ?></h3>
                                 </div>
-
+                         
                                 <div class="add-input">
-                                    <h3>Last Name : <?php echo $row['last_name']; ?></h3>
-
-
+                                    <h5>Suffix:</h5>
+                                    <h3><?php echo $row['suffix']; ?></h3>
                                 </div>
-
+                    
                                 <div class="add-input">
-                                    <h3>Suffix : <?php echo $row['suffix']; ?></h3>
-
-
-                                </div>
-
-                                <div class="add-input">
-                                    <h3>Position : <?php echo $row['position']; ?></h3>
+                                    <h5>Position:</h5>
+                                    <h3><?php echo $row['position']; ?></h3>
 
 
                                 </div>
@@ -98,31 +107,34 @@ while ($row = mysqli_fetch_array($sql)) {
 
                             <div class="right-input">
                                 <div class="add-input">
-                                    <h3>Region : <?php echo $row['region']; ?></h3>
+                                    <h5>Region:</h5>
+                                    <h3><?php echo $row['region']; ?></h3>
+                                </div>
+
+                                <div class="add-input">
+                                    <h5>Province:</h5>
+                                    <h3><?php echo $row['province']; ?></h3>
+
+
+                                </div>
+
+
+                                <div class="add-input">
+                                    <h5>City/Municipality:</h5>
+                                    <h3><?php echo $row['city']; ?></h3>
 
 
                                 </div>
 
                                 <div class="add-input">
-                                    <h3>Province : <?php echo $row['province']; ?></h3>
-
-
-                                </div>
-
-
-                                <div class="add-input">
-                                    <h3>City/Municipality : <?php echo $row['city']; ?></h3>
-
+                                    <h5>Barangay:</h5>
+                                    <h3><?php echo $row['barangay']; ?></h3>
 
                                 </div>
 
                                 <div class="add-input">
-                                    <h3>Barangay : <?php echo $row['barangay']; ?></h3>
-
-                                </div>
-
-                                <div class="add-input">
-                                    <h3>Email Address : <?php echo $row['email']; ?></h3>
+                                    <h5>Email Address:</h5>
+                                    <h3><?php echo $row['email']; ?></h3>
 
 
                                 </div>
@@ -130,11 +142,13 @@ while ($row = mysqli_fetch_array($sql)) {
 
                             <div class="outer-right-input">
                                 <div class="add-input">
-                                    <h3>Barangay Hall Phone Number : <?php echo $row['barangay_hall_tel_no']; ?></h3>
+                                    <h5>Barangay Hall Phone Number:</h5>
+                                    <h3><?php echo $row['barangay_hall_tel_no']; ?></h3>
 
 
                                 </div>
-
+                                <br>
+                                <br>
                                 <button class= "edit_official_btn">
                                 <a href="edit_official.php?id=<?php echo $row['id'] ?> ">Edit</a>
                                 </button>
