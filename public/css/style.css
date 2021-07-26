@@ -200,6 +200,7 @@ h4 {
 
 section {
   height: 86%;
+  overflow: hidden;
   width: 94%;
   display: flex;
   flex-direction: column;
@@ -325,10 +326,10 @@ select {
   color: white;
   font-family: Poppins, sans-serif;
   border-radius: 12px;
-  width: 100px;
+  width: 75px;
   border: none;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 600;
 
 }
@@ -338,10 +339,9 @@ select {
   color: white;
   font-family: Poppins, sans-serif;
   border-radius: 12px;
-  width: 100px;
   border: none;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 600;
 
 }
