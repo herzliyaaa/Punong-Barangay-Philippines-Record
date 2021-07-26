@@ -326,11 +326,11 @@ select {
   color: white;
   font-family: Poppins, sans-serif;
   border-radius: 12px;
-  width: 75px;
+  width: 60px !important;
   border: none;
   text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.8rem !important;
+  font-weight: 500;
 
 }
 
@@ -341,7 +341,7 @@ select {
   border-radius: 12px;
   border: none;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
 
 }
@@ -352,11 +352,7 @@ select {
   border-radius: 5px;
 }
 
-.view-btn a:hover {
-  text-decoration: none;
-  color: #ffffff;
-  border-radius: 5px;
-}
+
 
 .del-btn {
   background-color: #2a2a72;
@@ -422,6 +418,7 @@ select {
 .officials-input {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 #wrapper.toggled #sidebar-wrapper {
