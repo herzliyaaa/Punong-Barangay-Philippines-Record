@@ -34,6 +34,13 @@
                 </div>
               </div>
               <br>
+
+                  <!----->  
+ <!-- error -->
+ <?php if (isset($_GET['error'])) { ?>
+  <p class="error"><?php echo $_GET['error']; ?></p>
+  <?php } ?>
+
               <form method="post" class="login" action="login_function.php">
                 <div class="form-group mb-3">
                   <i class="fa fa-user icon"></i>
