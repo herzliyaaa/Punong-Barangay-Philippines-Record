@@ -4,6 +4,9 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -11716,12 +11719,12 @@ a.text-dark:focus {
 }
 
 body {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.8;
   font-weight: normal;
-  background: #E8E8E8;
-  color: gray;
+  background: linear-gradient(to right, #FFFDE4, #005AA7) !important;
+  color: rgb(22, 22, 22);
 }
 
 a {
@@ -11751,7 +11754,8 @@ h5,
 .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Poppins",  sans-serif;
+  text-transform: uppercase;
   color: #000;
 }
 
@@ -12017,7 +12021,7 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);*/
 }
 
 .btn.btn-primary {
-  background: #f35588;
+  
   color: #fff;
   background: #63a4ff;
   background: -moz-linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
@@ -12035,7 +12039,7 @@ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%); **/
 
 .btn.btn-primary:hover {
   border: 1px solid;
-  background: #9CC3D5FF;
+  background: rgb(8, 40, 54);
   color: #fff;
 }
 

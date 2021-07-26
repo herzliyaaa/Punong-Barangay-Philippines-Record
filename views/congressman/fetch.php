@@ -48,6 +48,7 @@ $query=mysqli_query($connect,$sql);
 $data=array();
 
 while($row=mysqli_fetch_array($query)){
+    $id= $row[0];
     $subdata=array();
     $subdata[]=$row[0]; //id
     $subdata[]=$row[1]; //region
@@ -61,6 +62,7 @@ while($row=mysqli_fetch_array($query)){
     $subdata[]=$row[9]; //suffix 
     $subdata[]=$row[10]; //email
     $subdata[]=$row[11]; //barangay_hall_tell_no    
+   $subdata[]="<button class=  'view-btn' ><a href=official_details.php?id=$id>view</a></button>" ; 
     $data[]=$subdata;
 }
 
@@ -72,6 +74,3 @@ $json_data=array(
 );
 
 echo json_encode($json_data);
-
-
-?>

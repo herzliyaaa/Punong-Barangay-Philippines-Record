@@ -10,12 +10,8 @@ include "../../db_connection.php";
     <title>Barangay Officials Philippines Record</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">  -->
     <link rel="stylesheet" href="../../public/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-    <!-- <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>  -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
@@ -44,7 +40,7 @@ include "../../db_connection.php";
                                 <i class="doe fas fa-user me-2"></i>John Doe
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                               
+
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </li>
@@ -53,15 +49,14 @@ include "../../db_connection.php";
             </nav>
 
             <section>
-                <div class="top-section"> <a href="add_officials.php">
-                    <button class="add-official-btn"> Add Official </button>
-                    </a>
-                </div>
+               
                 <div class="table-responsive" style="width: 95%;">
                     <table id="officials" class="table table-striped table-bordered">
                         <thead>
                             <tr>
                                 <th scope="col">ID</th>
+                                <th scope="col">Province</th>
+                                <th scope="col">City</th>
                                 <th scope="col">Barangay</th>
                                 <th scope="col">Position</th>
                                 <th scope="col">Last Name</th>

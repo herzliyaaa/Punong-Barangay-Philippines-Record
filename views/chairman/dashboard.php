@@ -56,23 +56,15 @@
                 </div>
             </nav>
 
+
+           
             <div class="container-fluid px-4">
+            <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials According to its position</h3>
                 <div class="row g-3 my-2">
 
-                    <div class="col-md-4">
+                   
 
-
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
-
-
-
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
 
 
@@ -84,7 +76,7 @@
 
                 
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
 
@@ -96,11 +88,11 @@
 
                 </div>
 
-                <div class="row my-5">
-                    <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials According to its position</h3>
+                <div class="row my-6">
+                    
                     <div class="col-md-12">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <canvas id="canvas"></canvas>
+                            <canvas id="canvas_alilem"></canvas>
 
                         </div>
                     </div>
@@ -121,9 +113,9 @@
 </div>
 
 </html>
-<?php include "../admin/charts/chart_queries.php" ?>
+<?php include "../chairman/charts/chart_queries.php" ?>
 <?php include "../../db_connection.php"; ?>
-<?php include "../admin/charts/admin_charts.php"; ?>
+<?php include "../chairman/charts/brgy_charts.php"; ?>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>

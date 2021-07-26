@@ -87,8 +87,7 @@
 
             legend: {
                 position: 'left',
-                display: true,
-                align: 'start'
+                display: true
             }
 
 

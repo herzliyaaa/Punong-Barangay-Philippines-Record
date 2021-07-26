@@ -43,6 +43,7 @@ $query=mysqli_query($connect,$sql);
 $data=array();
 
 while($row=mysqli_fetch_array($query)){
+    $id= $row[0];
     $subdata=array();
     $subdata[]=$row[0]; //id
     $subdata[]=$row[1]; //city
@@ -54,6 +55,7 @@ while($row=mysqli_fetch_array($query)){
     $subdata[]=$row[7]; //suffix 
     $subdata[]=$row[8]; //email
     $subdata[]=$row[9]; //barangay_hall_tell_no    
+    $subdata[]="<button class=  'view-btn' ><a href=official_details.php?id=$id>view</a></button>" ; 
     $data[]=$subdata;
 }
 

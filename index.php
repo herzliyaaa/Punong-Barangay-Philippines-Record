@@ -22,7 +22,8 @@
           <div class="wrap d-md-flex">
             <div class="text-wrap p-4 p-lg-5 text-center d-flex align-items-center order-md-last">
               <div class="text w-100">
-                <div><img src="/login-form-17/images/phbarangay-logo.png"></div>
+                <div><img src="public/img/phbarangay-logo.png"></div>
+                <br>
                 <h2>Welcome to login</h2>
                 <p>Login as Admin to Create User</p>
               </div>
@@ -53,6 +54,8 @@
                   <input type="password" class="form-control" placeholder="Enter Password" name="password" required>
                 </div>
                 <div class="form-group">
+                  <br>
+
                   <button type="submit" class="form-control btn btn-primary submit px-3">CONTINUE</button>
                 </div>
                 <div class="form-group d-md-flex">
@@ -67,10 +70,10 @@
     </div>
   </section>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="public/js/jquery.min.js"></script>
+  <script src="public/js/popper.js"></script>
+  <script src="public/js/bootstrap.min.js"></script>
+  <script src="public/js/main.js"></script>
 
 
 </body>

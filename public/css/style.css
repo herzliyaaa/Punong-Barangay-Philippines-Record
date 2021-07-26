@@ -494,6 +494,12 @@ canvas#bar_ilocos_sur{
   height: 250px !important;
 }
 
+canvas#canvas_alilem{
+  height: 350px !important;
+}
+
+
+
 .pb-head {
   display: flex;
   margin: auto;
