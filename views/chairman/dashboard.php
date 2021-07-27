@@ -81,7 +81,7 @@
 
 
 
-                            <canvas id="dash_Chart"></canvas>
+                            <canvas id="canvas_banayoyo"></canvas>
 
                         </div>
                     </div>

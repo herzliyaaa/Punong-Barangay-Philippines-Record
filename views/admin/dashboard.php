@@ -41,6 +41,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
@@ -57,7 +59,20 @@
             </nav>
 
            
+<?php 
+            
+            $pop = mysqli_query($connect, "Select COUNT(id) as pop_cnt from records");
+            $population = mysqli_fetch_array($pop); 
 
+            $pbquery = mysqli_query($connect, "Select COUNT(id) as pb_cnt from records where position ='Punong Barangay'");
+            $pb = mysqli_fetch_array($pbquery);
+
+            $sbmquery = mysqli_query($connect, "Select COUNT(id) as sbm_cnt from records where position ='Sangguniang Barangay Member'");
+            $sbm = mysqli_fetch_array($sbmquery);
+
+            $skquery = mysqli_query($connect, "Select COUNT(id) as sk_cnt from records where position ='SK Chairperson'");
+            $sk = mysqli_fetch_array($skquery);
+            ?>
 
             <div class="container-fluid px-4">
                 <div class="row g-3 my-2">
