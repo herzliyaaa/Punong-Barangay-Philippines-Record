@@ -70,10 +70,10 @@
         },
         options: {
             animation: {
-            duration: 0 // general animation time
+            duration: 2 // general animation time
         },
         hover: {
-            animationDuration: 0 // duration of animations when hovering an item
+            animationDuration: 2 // duration of animations when hovering an item
         },
        
    
@@ -106,43 +106,44 @@
 
             datasets: [{
                 label: "Punong Barangay",
-                backgroundColor: "pink",
-                borderColor: "red",
+                backgroundColor: "#73AB84",
+                borderColor: "#73AB84",
                 borderWidth: 1,
                 data: [
                     <?php echo $alilempb['alilem_pb_cnt']; ?>,
                     <?php echo $banayoyopb['banayoyo_pb_cnt']; ?>,
                     <?php echo $burgospb['burgos_pb_cnt']; ?>,
                     <?php echo $cabugaopb['cabugao_pb_cnt']; ?>,
+                    <?php echo $cervantespb['cervantes_pb_cnt']; ?>
                    
                 ]
             },
             {
                 label: "Sangguniang Barangay Member",
-                backgroundColor: "lightblue",
-                borderColor: "blue",
+                backgroundColor: "#507DBC",
+                borderColor: "#507DBC",
                 borderWidth: 1,
                 data: [
 
                     <?php echo $alilemsbm['alilem_sbm_cnt']; ?>,
                     <?php echo $banayoyosbm ['banayoyo_sbm_cnt']; ?>,
                     <?php echo $burgossbm['burgos_smb_cnt']; ?>,
-                    <?php echo $cabugaosbm['cabugao_smb_cnt']; ?>
-                  
+                    <?php echo $cabugaosbm['cabugao_smb_cnt']; ?>,
+                    <?php echo $cervantessbm['cervantes_smb_cnt']; ?>
                 ]
             },
             {
                 label: "SK Chairperson",
-                backgroundColor: "lightgreen",
-                borderColor: "green",
+                backgroundColor: "#EFC88B",
+                borderColor: "#EFC88B",
                 borderWidth: 1,
                 data: [
 
                     <?php echo $alilemsk['alilem_sk_cnt']; ?>,
                     <?php echo $banayoyosk['banayoyo_sk_cnt']; ?>,
                     <?php echo $burgossk_is['burgos_sk_cnt']; ?>,
-                    <?php echo $cabugaosk['cabugao_sk_cnt']; ?>
-                  
+                    <?php echo $cabugaosk['cabugao_sk_cnt']; ?>,
+                    <?php echo $cervantessk['cervantes_sk_cnt']; ?>
 
                 ]
             }
@@ -152,8 +153,16 @@
 
         options: {
 
+            animation: {
+            duration: 2 // general animation time
+        },
+        hover: {
+            animationDuration: 2 // duration of animations when hovering an item
+        },
+
             responsive: true,
             maintainAspectRatio: false,
+
 
 
             legend: {

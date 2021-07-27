@@ -36,10 +36,10 @@ include "../../db_connection.php";
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="john nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="doe fas fa-user me-2"></i>John Doe
+                                <i class="doe fas fa-user me-2"></i><?php echo $_SESSION['role']; ?>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                               
+
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </li>
@@ -48,49 +48,54 @@ include "../../db_connection.php";
             </nav>
 
             <section class="user-section">
+
                 <div class="user-content">
                     <div class="top-user-section">
                         <a href="add_user.php">
                             <button class="add-users-btn"> Add Users </button>
                         </a>
                     </div>
-                    <table id="users" class="table table-striped table-bordered">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Username</th>
-                                <th>Role</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
+                    <div class="table-responsive">
+                        <table id="users" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Username</th>
+                                    <th>Role</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
 
-                        <?php
+                            <?php
 
-                        $sql =  mysqli_query($connect, "select * from users");
-                        while ($row = mysqli_fetch_array($sql)) {
+                            $sql =  mysqli_query($connect, "select * from users");
+                            while ($row = mysqli_fetch_array($sql)) {
 
-                        ?>
-                            <tr>
-                                <td><?php echo $row['id'] ?></td>
-                                <td><?php echo $row['name'] ?></td>
-                                <td><?php echo $row['user_name'] ?></td>
-                                <td><?php echo $row['role'] ?></td>
-                                <td> <a href="users_details.php?id=<?php echo $row['id'] ?>"><button class="view-user-btn">View</button></a>
-                                </td>
-                            </tr>
-                        <?php
-                        }
-                        ?>
+                            ?>
+                                <tr>
+                                    <td><?php echo $row['id'] ?></td>
+                                    <td><?php echo $row['name'] ?></td>
+                                    <td><?php echo $row['user_name'] ?></td>
+                                    <td><?php echo $row['role'] ?></td>
+                                    <td> <a href="users_details.php?id=<?php echo $row['id'] ?>"><button class="view-user-btn">View</button></a>
+                                    </td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
 
-                    </table>
+                        </table>
+                    </div>
                 </div>
+
             </section>
 </body>
 <script>
     $(document).ready(function() {
         $('#users').dataTable({
             "bPaginate": false,
+            "responsive": true,
             "bLengthChange": false,
             "bFilter": true,
             "bInfo": false,

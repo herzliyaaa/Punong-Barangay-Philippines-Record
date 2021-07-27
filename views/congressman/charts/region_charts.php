@@ -54,10 +54,10 @@
                     '#7251b5',
                     '#73AB84',
                     '#627C85'
-
+                   //a06cd5
                 ],
 
-             
+        
 
                 borderColor: "transparent"
             }]
@@ -114,7 +114,7 @@
             {
                 label: "Sangguniang Barangay Member",
                 backgroundColor: "#507DBC",
-                borderColor: "#507DBC",
+                borderColor: "white",
                 borderWidth: 1,
                 data: [<?php echo $ncr_sbm_count['ncr_sbm_cnt']; ?>,
                        <?php echo $car_sbm_count['car_sbm_cnt']; ?>,
@@ -137,7 +137,7 @@
             {
                 label: "SK Chairperson",
                 backgroundColor: "#EFC88B",
-                borderColor: "#EFC88B",
+                borderColor: "white",
                 borderWidth: 1,
                 data: [<?php echo $ncr_sk_count['ncr_sk_cnt']; ?>,
                        <?php echo $car_sk_count['car_sk_cnt']; ?>,

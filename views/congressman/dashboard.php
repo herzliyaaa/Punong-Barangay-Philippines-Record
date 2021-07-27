@@ -45,7 +45,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                             <a class="john nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="doe fas fa-user me-2"></i>John Doe
+                                <i class="doe fas fa-user me-2"></i><?php echo $_SESSION['role']; ?>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 
@@ -59,55 +59,17 @@
             <div class="container-fluid px-4">
                 <div class="row g-3 my-2">
 
-                    <div class="col-md-3">
+                    
 
-
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
-                      
-                            <!-- <i class="fas fa-users fs-4 me-1"></i> -->
-                            <h2> Total Population of BRGY Officials: </h2>
-                 
-
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
-                            <div class="pb-head">
-                                <h4> Punong Barangay: </h4>
-                            </div>
-                            <!--                        
-                        <div class="sbm-head"><h3> Sangguniang Barangay Member:  </h3> </div>
-                        <h3> SK Chairperson:  </h3> -->
-                        </div>
-
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
-                           
-                        <div class="sbm-head">
-                        <h4> Sangguniang Barangay Member: </h4>
-                        </div>
-                        </div>
-
-
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
-                        
-                        <div class="sk-head">
-                        <h4> SK Chairperson:  </h4>
-                        </div>
-                        </div>
-
-                    </div>
+                    
 
                     <!-- <div class="col-md-3">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
                         </div>
                     </div> -->
-
-                    <div class="col-md-5">
+                    <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials</h3>
+                    <div class="col-md-12">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
 
@@ -167,9 +129,9 @@
 </div>
 
 </html>
-<?php include "../admin/charts/chart_queries.php" ?>
+<?php include "../congressman/charts/chart_queries.php" ?>
 <?php include "../../db_connection.php"; ?>
-<?php include "../admin/charts/admin_charts.php"; ?>
+<?php include "../congressman/charts/region_charts.php"; ?>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>

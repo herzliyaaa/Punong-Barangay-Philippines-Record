@@ -129,8 +129,8 @@ $burgospb = mysqli_fetch_array($burgos_pb);
 $cabugao_pb =  mysqli_query($connect, "SELECT COUNT(id) as cabugao_pb_cnt from records where Region = 'Region 1' and position = 'Punong Barangay' and province = 'Ilocos Sur' and city =  'Cabugao'");
 $cabugaopb = mysqli_fetch_array($cabugao_pb);
 
-// $cervantes_pb =  mysqli_query($connect, "SELECT COUNT(id) as cervantes_pb_cnt from records where Region = 'Region 1' and position = 'Punong Barangay' and province = 'Ilocos Sur' and city =  'Cervantes'");
-// $cervantespb = mysqli_fetch_array($cervantes_pb);
+$cervantes_pb =  mysqli_query($connect, "SELECT COUNT(id) as cervantes_pb_cnt from records where Region = 'Region 1' and position = 'Punong Barangay' and province = 'Ilocos Sur' and city =  'Cervantes'");
+$cervantespb = mysqli_fetch_array($cervantes_pb);
 
 
 // Region 2 POPULATION COUNT OF BRGY OFFICIALS ACCORDING TO ITS POSITIONS (sangguniang)
@@ -149,8 +149,8 @@ $burgossbm = mysqli_fetch_array($burgos_sbm);
 $cabugao_sbm =  mysqli_query($connect, "SELECT COUNT(id) as cabugao_smb_cnt from records where Region = 'Region 1' and position = 'Sangguniang Barangay Member' and province = 'Ilocos Sur' and city =  'Cabugao'");
 $cabugaosbm = mysqli_fetch_array($cabugao_sbm);
 
-// $cervantes_sbm =  mysqli_query($connect, "SELECT COUNT(id) as cervantes_smb_cnt from records where Region = 'Region 1' and position = 'Sangguniang Barangay Member' and province = 'Ilocos Sur' city =  'Cervantes' ");
-// $cervantessbm = mysqli_fetch_array($cervantes_sbm);
+$cervantes_sbm =  mysqli_query($connect, "SELECT COUNT(id) as cervantes_smb_cnt from records where Region = 'Region 1' and position = 'Sangguniang Barangay Member' and province = 'Ilocos Sur' and city =  'Cervantes' ");
+$cervantessbm = mysqli_fetch_array($cervantes_sbm);
 
 // Region 2 POPULATION COUNT OF BRGY OFFICIALS ACCORDING TO ITS POSITIONS (SK)
 // SK Chairperson
@@ -169,8 +169,8 @@ $cabugao_sk =  mysqli_query($connect, "SELECT COUNT(id) as cabugao_sk_cnt from r
 $cabugaosk = mysqli_fetch_array($cabugao_sk);
 
 
-// $cervantes_sk =  mysqli_query($connect, "SELECT COUNT(id) as cervantes_sk_cnt from records where Region = 'Region 1' and position = 'SK Chairperson' and province = 'Ilocos Sur' city =  'Cervantes' ");
-// $cervantessk = mysqli_fetch_array($cervantes_sk);
+$cervantes_sk =  mysqli_query($connect, "SELECT COUNT(id) as cervantes_sk_cnt from records where Region = 'Region 1' and position = 'SK Chairperson' and province = 'Ilocos Sur' and city =  'Cervantes' ");
+$cervantessk = mysqli_fetch_array($cervantes_sk);
 
 
 ?>
