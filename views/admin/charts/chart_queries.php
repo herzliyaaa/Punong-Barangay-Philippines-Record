@@ -1,5 +1,20 @@
 <?php include "../../db_connection.php"; ?>
 
+<?php 
+            
+            $pop = mysqli_query($connect, "Select COUNT(id) as pop_cnt from records");
+            $population = mysqli_fetch_array($pop); 
+
+            $pbquery = mysqli_query($connect, "Select COUNT(id) as pb_cnt from records where position ='Punong Barangay'");
+            $pb = mysqli_fetch_array($pbquery);
+
+            $sbmquery = mysqli_query($connect, "Select COUNT(id) as sbm_cnt from records where position ='Sangguniang Barangay Member'");
+            $sbm = mysqli_fetch_array($sbmquery);
+
+            $skquery = mysqli_query($connect, "Select COUNT(id) as sk_cnt from records where position ='SK Chairperson'");
+            $sk = mysqli_fetch_array($skquery);
+            ?>
+
 <?php
 
 // POPULATION COUNT OF BRGY OFFICIALS

@@ -63,7 +63,7 @@ while($row=mysqli_fetch_array($query)){
     $subdata[]=$row[9]; //suffix 
     $subdata[]=$row[10]; //email
     $subdata[]=$row[11]; //barangay_hall_tell_no  
-    $subdata[]="<button class=  'view-btn' ><a href=official_details.php?id=$id>view</a></button>" ; 
+    $subdata[]="<a href=official_details.php?id=$id> <button class=  'view-btn' >view</button></a>" ; 
     $data[]=$subdata;
 }
 
@@ -75,5 +75,3 @@ $json_data=array(
 );
 
 echo json_encode($json_data);
-
-?>
