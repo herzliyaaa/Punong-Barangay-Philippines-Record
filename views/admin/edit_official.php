@@ -54,12 +54,12 @@ while ($row = mysqli_fetch_array($sql)) {
                     <h2 class="title">UPDATE OFFICIAL</h2>
                 </div>
                 <div class="card-body">
-                    <form action="add_officials_function.php" method="post" enctype="multipart/form-data">
+                    <form action="edit_official_function.php" method="post" enctype="multipart/form-data">
                          <div class="form-row">
                             <div class="name">ID:</div>
                             <div class="value">
                                 <div class="input-group">
-                                     <h4 class="input--style-5" type="text" name="id"><?php echo $row['id']; ?></h4>
+                                     <h4 class="input--style-5" type="hidden" name="id"><?php echo $row['id']; ?></h4>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@ while ($row = mysqli_fetch_array($sql)) {
                             <div class="name">Position</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="region" required>
+                                    <input class="input--style-5" type="text" name="position" value="<?php echo $row['position']; ?>" required>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@ while ($row = mysqli_fetch_array($sql)) {
                             <div class="name">Region</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="region" required>
+                                    <input class="input--style-5" type="text" name="region" value="<?php echo $row['region']; ?>" required>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +114,7 @@ while ($row = mysqli_fetch_array($sql)) {
                             <div class="name">Province</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="province" required>
+                                    <input class="input--style-5" type="text" nname="province" value="<?php echo $row['province']; ?>" required>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@ while ($row = mysqli_fetch_array($sql)) {
                             <div class="name">City</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="city" required>
+                                    <input class="input--style-5" type="text" name="city" value="<?php echo $row['city']; ?>" required>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +130,7 @@ while ($row = mysqli_fetch_array($sql)) {
                             <div class="name">Barangay</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="barangay" required>
+                                    <input class="input--style-5" type="text" name="barangay" value="<?php echo $row['barangay']; ?>" required>
                                 </div>
                             </div>
                         </div>
@@ -138,7 +138,7 @@ while ($row = mysqli_fetch_array($sql)) {
                             <div class="name">Email</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="email" name="email">
+                                    <input class="input--style-5" type="email" name="email" value="<?php echo $row['email']; ?>">
                                 </div>
                             </div>
                         </div>
@@ -148,20 +148,21 @@ while ($row = mysqli_fetch_array($sql)) {
                                 <div class="row row-refine">
                                     <div class="col-9">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="barangay_hall_tel_no">
+                                            <input class="input--style-5" type="text" name="barangay_hall_tel_no" value="<?php echo $row['barangay_hall_tel_no']; ?>">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row p-t-20">
-                            <label class="label label--block">By clicking the Register button below, I hereby agree to and accept the following terms and conditions governing my
+                            <label class="label label--block">By clicking the Update button below, I hereby agree to and accept the following terms and conditions governing my
 use of the website.</label>
                         </div>
                         <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit" name="add_official_btn">Register</button>
+                            <button class="btn btn--radius-2 btn--red" type="submit" name="add_official_btn">UPDATE</button>
                         </div>
                     </form>
+                     <a href="officials_directory.php"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit" name="edit_official_btn">CANCEL</button></a>
                 </div>
             </div>
         </div>
