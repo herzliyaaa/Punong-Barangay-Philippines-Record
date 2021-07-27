@@ -16,16 +16,15 @@ while ($row = mysqli_fetch_array($sql)) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <link rel="stylesheet" href="../../public/css/style.css" />
 
-<style type="text/css">
-    .add-input {
-        padding: 4%;
-    }
+        <style type="text/css">
+            .add-input {
+                padding: 4%;
+            }
 
-    h5 {
-        color: #2a2a72;
-    }
-
-</style>
+            h5 {
+                color: #2a2a72;
+            }
+        </style>
 
     </head>
 
@@ -53,8 +52,8 @@ while ($row = mysqli_fetch_array($sql)) {
                                     <i class="doe fas fa-user me-2"></i><?php echo $_SESSION['role']; ?>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    
-                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+
+                                    <li><a class="dropdown-item" href="../../logout.php">Logout</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -62,11 +61,12 @@ while ($row = mysqli_fetch_array($sql)) {
                 </nav>
 
                 <section>
+                    <div class="back">
                     <a href="officials_directory.php">
                         <button class="back-btn">Back</button>
                     </a>
-
-                    <form action="./edit_official_function.php" method="post" enctype="multipart/form-data">
+                    </div>
+                    <form method="post"  enctype="multipart/form-data" action="edit_official.php?id=<?php echo $row['id'] ?> ">
                         <div class="officials-input">
                             <div class="left-input">
                                 <div class="add-input">
@@ -74,29 +74,29 @@ while ($row = mysqli_fetch_array($sql)) {
                                     <h3><?php echo $row['id']; ?></h3>
 
                                 </div>
-                              
+
                                 <div class="add-input">
                                     <h5>First Name:</h5>
                                     <h3><?php echo $row['first_name']; ?></h3>
 
 
                                 </div>
-                             
+
                                 <div class="add-input">
                                     <h5>Middle Name:</h5>
                                     <h3><?php echo $row['middle_name']; ?></h3>
                                 </div>
-                         
+
                                 <div class="add-input">
                                     <h5>Last Name:</h5>
                                     <h3><?php echo $row['last_name']; ?></h3>
                                 </div>
-                         
+
                                 <div class="add-input">
                                     <h5>Suffix:</h5>
                                     <h3><?php echo $row['suffix']; ?></h3>
                                 </div>
-                    
+
                                 <div class="add-input">
                                     <h5>Position:</h5>
                                     <h3><?php echo $row['position']; ?></h3>
@@ -149,9 +149,13 @@ while ($row = mysqli_fetch_array($sql)) {
                                 </div>
                                 <br>
                                 <br>
-                                <button class= "edit_official_btn">
-                                <a href="edit_official.php?id=<?php echo $row['id'] ?> ">Edit</a>
-                                </button>
+                               
+                               
+                                   
+                                        <button class="edit_official_btn">
+                                            Edit
+                                        </button>
+                               
 
                                 <?php include('modal.php'); ?>
                             </div>

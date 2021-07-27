@@ -8,8 +8,8 @@
         ],
         datasets: [{
                 label: "Punong Barangay",
-                backgroundColor: "pink",
-                borderColor: "red",
+                backgroundColor: "#73AB84",
+                borderColor: "#73AB84",
                 borderWidth: 1,
                 data: [
                     
@@ -27,8 +27,8 @@
             },
             {
                 label: "Sangguniang Barangay Member",
-                backgroundColor: "lightblue",
-                borderColor: "blue",
+                backgroundColor: "#507DBC",
+                borderColor: "#507DBC",
                 borderWidth: 1,
                 data: [<?php echo $alilemd_sbm_count['alilemd_sbm_cnt']; ?>,
                        <?php echo $amilongan_sbm_count['amilongan_sbm_cnt']; ?>,
@@ -45,8 +45,8 @@
             },
             {
                 label: "SK Chairperson",
-                backgroundColor: "lightgreen",
-                borderColor: "green",
+                backgroundColor: "#EFC88B",
+                borderColor: "#EFC88B",
                 borderWidth: 1,
                 data: [
                     

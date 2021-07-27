@@ -49,12 +49,15 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item" href="../../logout.php">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </nav>
+
+           
+
 
             <div class="container-fluid px-4">
                 <div class="row g-3 my-2">
@@ -65,7 +68,7 @@
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
                       
                             <!-- <i class="fas fa-users fs-4 me-1"></i> -->
-                            <h2> Total Population of BRGY Officials: </h2>
+                            <h2> Total Population of BRGY Officials: <span> <?php echo $population['pop_cnt']; ?> </span></h2>
                  
 
 
@@ -77,7 +80,7 @@
                     <div class="col-md-4">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
                             <div class="pb-head">
-                                <h4> Punong Barangay: </h4>
+                                <h4> Punong Barangay: <?php echo $pb['pb_cnt']; ?></h4>
                             </div>
                             <!--                        
                         <div class="sbm-head"><h3> Sangguniang Barangay Member:  </h3> </div>
@@ -87,7 +90,7 @@
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center ">
                            
                         <div class="sbm-head">
-                        <h4> Sangguniang Barangay Member: </h4>
+                        <h4> Sangguniang Barangay Member: <?php echo $sbm['sbm_cnt']; ?></h4>
                         </div>
                         </div>
 
@@ -95,7 +98,7 @@
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center">
                         
                         <div class="sk-head">
-                        <h4> SK Chairperson:  </h4>
+                        <h4> SK Chairperson: <?php echo $sk['sk_cnt']; ?> </h4>
                         </div>
                         </div>
 
