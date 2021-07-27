@@ -1,11 +1,17 @@
+
 <?php 
 
 include "../../db_connection.php";
 $id = $_GET['id'];
 $sql =  mysqli_query($connect, "SELECT * FROM `records` WHERE id = $id");
-while ($row = mysqli_fetch_array($sql)) {
+while ($row = mysqli_fetch_array($sql)) 
 
+{
+
+    
+    
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,6 +50,7 @@ while ($row = mysqli_fetch_array($sql)) {
 </head>
 
 <body>
+
 
 <div class="d-flex" id="wrapper">
         <?php include "../../sidebar.php"; ?>
@@ -182,28 +189,27 @@ while ($row = mysqli_fetch_array($sql)) {
                             </div>
                         </div>
                         <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit" name="add_official_btn">EDIT</button>
+                         <button class="btn btn--radius-2 btn--red"  name="edit_official_btn">EDIT</button>
+                           
+                            <?php include('modal.php'); ?>
                         </div>
-                    </form><br>
-                     <a href="officials_directory.php"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit" name="add_official_btn">CANCEL</button></a>
-                </div>
+                        <a href="officials_directory.php"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit">CANCEL</button></a>
+                    </form>  <br>
+                   
+                  
+                    </div>
+
             </div>
         </div>
     </div>
 </div>
-    <!-- Jquery JS-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script>
+  
 
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
+
 <?php } ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>

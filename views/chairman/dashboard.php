@@ -64,19 +64,10 @@
 
                    
 
-                    <div class="col-md-6">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
-
-
-                        </div>
-
-        
-
-                    </div>
-
                 
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
+                    <h6>POPULATION COUNT OF BRGY OFFICIALS ACCORDING TO ITS POSITIONS</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
 
@@ -89,8 +80,9 @@
                 </div>
 
                 <div class="row my-6">
-                    
+              
                     <div class="col-md-12">
+                    <h6>POPULATION COUNT OF BRGY OFFICIALS ACCORDING TO ITS POSITIONS</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <canvas id="canvas_alilem"></canvas>
 

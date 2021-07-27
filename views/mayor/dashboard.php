@@ -62,8 +62,10 @@
 
                     
 
-                    <div class="col-md-3">
+                    <div class="col-md-6">
+                    <h6>Total population of brgy officials in Ilocos Norte</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
+                           
                         <canvas id="pie_ilocos_norte"></canvas>
                         </div>
 
@@ -74,60 +76,37 @@
 
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-6">
+                    <h6>Total Population of Brgy. Officials in Ilocos Norte According to its Position</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                         <canvas id="bar_ilocos_norte"></canvas>
 
                         </div>
                     </div>
 
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <canvas id="pie_ilocos_sur"></canvas>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-
-                        <canvas id="bar_ilocos_sur"></canvas>
-
-                           
-                        </div>
-                    </div>
+                   
 
                 </div>
-                <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Region 2 </h3>
-                <div class="row g-3 my-2">
-                  
-                  <div class="col-md-3">
-                      <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
+                <!-- <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Region 2 </h3> -->
+                <div class="row g-3 my-2">
+                
+                  <div class="col-md-6">
+                  <h6>Total population of brgy officials in Ilocos Sur</h6>
+                      <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                      <canvas id="pie_ilocos_sur"></canvas>
                    
                       </div>
                   </div>
 
-                  <div class="col-md-3">
+                  <div class="col-md-6">
+                  <h6>Total Population of Brgy. Officials in Ilocos Sur According to its Position</h6>
                       <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
-                      <!-- <canvas id="canvas3"></canvas> -->
+                      <canvas id="bar_ilocos_sur"></canvas>
                       </div>
                   </div>
 
-                  <div class="col-md-3">
-                      <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-
-                      <!-- <canvas id="canvas3"></canvas> -->
-                      </div>
-                  </div>
-
-                  <div class="col-md-3">
-                      <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-
-                      <!-- <canvas id="canvas4"></canvas> -->
-                      </div>
-                  </div>
 
 
               </div>

@@ -495,10 +495,12 @@ canvas#bar_ilocos_sur{
 }
 
 canvas#canvas_alilem{
-  height: 350px !important;
+  height: 270px !important;
 }
 
-
+canvas#canvas_banayoyo{
+  height: 290px !important;
+}
 
 .pb-head {
   display: flex;

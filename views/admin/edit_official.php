@@ -4,6 +4,8 @@ $id = $_GET['id'];
 $sql =  mysqli_query($connect, "SELECT * FROM `records` WHERE id = $id");
 while ($row = mysqli_fetch_array($sql)) {
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,12 +29,10 @@ while ($row = mysqli_fetch_array($sql)) {
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <!-- Vendor CSS-->
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    
 
     <!-- Main CSS-->
-    <link href="\Punong-Barangay-Philippines-Record\public\css\add-official.css" rel="stylesheet" media="all">
+    <link href="../../public/css/add-official.css" rel="stylesheet" media="all">
 
 </head>
 
@@ -53,13 +53,16 @@ while ($row = mysqli_fetch_array($sql)) {
                 <div class="card-heading">
                     <h2 class="title">UPDATE OFFICIAL</h2>
                 </div>
+
+      
                 <div class="card-body">
                     <form action="edit_official_function.php" method="post" enctype="multipart/form-data">
                          <div class="form-row">
                             <div class="name">ID:</div>
                             <div class="value">
                                 <div class="input-group">
-                                     <h4 class="input--style-5" type="hidden" name="id"><?php echo $row['id']; ?></h4>
+                         
+                                     <h4 class="input--style-5" type="hidden" name="id"> <?php echo $row['id']; ?></h4>
                                 </div>
                             </div>
                         </div>
@@ -159,31 +162,27 @@ while ($row = mysqli_fetch_array($sql)) {
 use of the website.</label>
                         </div>
                         <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit" name="add_official_btn">UPDATE</button>
+                            <button class="btn btn--radius-2 btn--red"  name="edit_official_btn">UPDATE</button>
                         </div>
+                        
                     </form>
-                     <a href="officials_directory.php"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit" name="edit_official_btn">CANCEL</button></a>
+
+                   
+                     <a href="officials_directory.php"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit">CANCEL</button></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    <!-- Jquery JS-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script>
-
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
+<?php
+            }
+                ?>
+   
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
-        <?php
-            }
-                ?>
+       
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 

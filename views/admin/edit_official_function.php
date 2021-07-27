@@ -39,5 +39,5 @@ if (isset($_POST['edit_official_btn'])) {
 //     echo "New record created successfully";}
 
 else {
-    echo "Error: " . $savesql . "<br>" . mysqli_error($connect);
+    echo "Error: " . $sql . "<br>" . mysqli_error($connect);
 }
