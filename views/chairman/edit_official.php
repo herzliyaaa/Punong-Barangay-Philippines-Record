@@ -1,165 +1,197 @@
 <?php
-include "../../db_connection.php";
+include "../../db_connection.php"; ?>
+
+<?php
 $id = $_GET['id'];
 $sql =  mysqli_query($connect, "SELECT * FROM `records` WHERE id = $id");
-while ($row = mysqli_fetch_array($sql)) {
-?>
+while ($row = mysqli_fetch_array($sql)) { ?>
 
 
-    <!DOCTYPE html>
-    <html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Barangay Officials Philippines Record</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <link rel="stylesheet" href="../../public/css/style.css" />
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
 
-    </head>
+    <!-- Title Page-->
+    <title>Barangay Officials Philippines Record<</title>
 
 
-    <body>
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
-        <div class="d-flex" id="wrapper">
-            <?php include "../../sidebar.php"; ?>
-            <div id="page-content-wrapper">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-                        <h2 class="fs-3 fw-bold m-0">Add Barangay Officials</h2>
-                    </div>
+    
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <!-- Main CSS-->
+    <link href="../../public/css/add-official.css" rel="stylesheet" media="all">
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="john nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="doe fas fa-user me-2"></i><?php echo $_SESSION['role']; ?>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+</head>
 
-                                    <li><a class="dropdown-item" href="../../logout.php">Logout</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+<body>
 
-                <section>
-                    <a href="official_details.php?id=<?php echo $id ?>">
-                        <button class="back-btn">Back</button>
-                    </a>
+<div class="d-flex" id="wrapper">
+        <?php include "../../sidebar.php"; ?>
+<div id="page-content-wrapper">
 
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center" >
+                    <i class="fas fa-align-left fs-1 me-4" id="menu-toggle" style="margin-top: -2450%;"></i>
+                </div>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">UPDATE OFFICIAL</h2>
+                </div>
+
+      
+                <div class="card-body">
                     <form action="edit_official_function.php" method="post" enctype="multipart/form-data">
-                        <div class="officials-input">
-
-                            <div class="left-input">
-                                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                                <div class="add-input">
-                                    <h5>First Name *:</h5>
-                                    <input type="text" name="first_name" value="<?php echo $row['first_name']; ?>">
+                         <div class="form-row">
+                            <div class="name">ID:</div>
+                            <div class="value">
+                                <div class="input-group">
+                                        <h4 class="input--style-5" type="hidden" name="id"> <?php echo $row['id']; ?></h4>
+                                <input class="input--style-5" type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                 
                                 </div>
-
-                                <div class="add-input">
-                                    <h5>Middle Name *:</h5>
-                                    <input type="text" name="middle_name" value="<?php echo $row['middle_name']; ?>">
-                                </div>
-
-                                <div class="add-input">
-                                    <h5>Last Name *:</h5>
-                                    <input type="text" name="last_name" value="<?php echo $row['last_name']; ?>">
-                                </div>
-
-                                <div class="add-input">
-                                    <h5>Suffix :</h5>
-                                    <input type="text" name="suffix" value="<?php echo $row['suffix']; ?>">
-                                </div>
-
-                                <div class="add-input">
-                                    <h5>Position *:</h5>
-                                    <input type="text" name="position" value="<?php echo $row['position']; ?>">
-                                </div>
-
-                            </div>
-
-
-                            <div class="right-input">
-
-                                <div class="add-input">
-                                    <h5>Region *:</h5>
-                                    <input type="text" name="region" value="<?php echo $row['region']; ?>">
-
-                                </div>
-
-                                <div class="add-input">
-                                    <h5>Province *:</h5>
-                                    <input type="text" name="province" value="<?php echo $row['province']; ?>">
-
-                                </div>
-
-
-                                <div class="add-input">
-                                    <h5>City/Municipality *:</h5>
-                                    <input type="text" name="city" value="<?php echo $row['city']; ?>">
-
-                                </div>
-
-                                <div class="add-input">
-                                    <h5>Barangay *:</h5>
-
-                                    <input type="text" name="barangay" value="<?php echo $row['barangay']; ?>">
-
-
-                                </div>
-
-                                <div class="add-input">
-                                    <h5>Email Address *:</h5>
-                                    <input type="text" name="email" value="<?php echo $row['email']; ?>">
-                                </div>
-
-                            </div>
-
-                            <div class="outer-right-input">
-                                <div class="add-input">
-                                    <h5>Barangay Hall Phone Number *:</h5>
-                                    <input type="text" name="barangay_hall_tel_no" value="<?php echo $row['barangay_hall_tel_no']; ?>">
-                                </div>
-
-                                <button class="save-btn" name="edit_official_btn">Save</button>
                             </div>
                         </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="first_name" value="<?php echo $row['first_name']; ?>" required>
+                                            <label class="label--desc">first name</label>
+                                        </div>
+                                    </div>
+                                     <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="middle_name" value="<?php echo $row['middle_name']; ?>">
+                                            <label class="label--desc">Middle name</label>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 10%;" class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="last_name" value="<?php echo $row['last_name']; ?>" required>
+                                            <label class="label--desc">last name</label>
+                                        </div>
+                                    </div>
+                                      <div style="margin-top: 10%;" class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="suffix" value="<?php echo $row['suffix']; ?>">
+                                            <label class="label--desc">Suffix</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="form-row">
+                            <div class="name">Position</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="position" value="<?php echo $row['position']; ?>" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Region</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="region" value="<?php echo $row['region']; ?>" required>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="form-row">
+                            <div class="name">Province</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="province" value="<?php echo $row['province']; ?>" required>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="form-row">
+                            <div class="name">City</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="city" value="<?php echo $row['city']; ?>" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Barangay</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="barangay" value="<?php echo $row['barangay']; ?>" required>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="email" value="<?php echo $row['email']; ?>">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Telephone</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="barangay_hall_tel_no" value="<?php echo $row['barangay_hall_tel_no']; ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="form-row p-t-20">
+                            <label class="label label--block">By clicking the Update button below, I hereby agree to and accept the following terms and conditions governing my
+use of the website.</label>
 
+
+                        </div>
+                
+                        
+                     
+                        <button class="btn btn--radius-2 btn--red"   name="edit_official_btn">UPDATE</button>   
                     </form>
+              
+                     <a href="official_details.php?id=<?php echo $row['id']?>"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit">CANCEL</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <?php
+  
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+              
+<?php
             }
                 ?>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 
-            </div>
-        </div>
-        </section>
+<script>
+    var el = document.getElementById("wrapper");
+    var toggleButton = document.getElementById("menu-toggle");
 
-    </body>
-    </div>
-
-    </html>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        var el = document.getElementById("wrapper");
-        var toggleButton = document.getElementById("menu-toggle");
-
-        toggleButton.onclick = function() {
-            el.classList.toggle("toggled");
-        };
-    </script>
+    toggleButton.onclick = function() {
+        el.classList.toggle("toggled");
+    };
+</script>
+<!-- end document-->

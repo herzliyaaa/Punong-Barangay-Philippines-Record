@@ -31,7 +31,3 @@ if (isset($_POST['add_user_btn'])) {
 
 // if (mysqli_query($connect, $savesql)) {
 //     echo "New record created successfully";}
-
-else {
-    echo "Error: " . $savesql . "<br>" . mysqli_error($connect);
-}

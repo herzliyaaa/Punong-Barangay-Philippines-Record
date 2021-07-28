@@ -1,9 +1,10 @@
 <?php
-include "../../db_connection.php";
+include "../../db_connection.php"; ?>
+
+<?php
 $id = $_GET['id'];
 $sql =  mysqli_query($connect, "SELECT * FROM `records` WHERE id = $id");
-while ($row = mysqli_fetch_array($sql)) {
-?>
+while ($row = mysqli_fetch_array($sql)) { ?>
 
 
 <!DOCTYPE html>
@@ -13,16 +14,12 @@ while ($row = mysqli_fetch_array($sql)) {
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
+   
 
     <!-- Title Page-->
     <title>Barangay Officials Philippines Record<</title>
 
-    <!-- Icons font CSS-->
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+
     <!-- Font special for pages-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
@@ -42,11 +39,10 @@ while ($row = mysqli_fetch_array($sql)) {
         <?php include "../../sidebar.php"; ?>
 <div id="page-content-wrapper">
 
- <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
                 <div class="d-flex align-items-center" >
-                    <i class="fas fa-align-left fs-1 me-4" id="menu-toggle" style="margin-top: -2200%;"></i>
+                    <i class="fas fa-align-left fs-1 me-4" id="menu-toggle" style="margin-top: -2450%;"></i>
                 </div>
-
     <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
@@ -61,8 +57,9 @@ while ($row = mysqli_fetch_array($sql)) {
                             <div class="name">ID:</div>
                             <div class="value">
                                 <div class="input-group">
-                         
-                                     <h4 class="input--style-5" type="hidden" name="id"> <?php echo $row['id']; ?></h4>
+                                        <h4 class="input--style-5" type="hidden" name="id"> <?php echo $row['id']; ?></h4>
+                                <input class="input--style-5" type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                 
                                 </div>
                             </div>
                         </div>
@@ -117,7 +114,7 @@ while ($row = mysqli_fetch_array($sql)) {
                             <div class="name">Province</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" nname="province" value="<?php echo $row['province']; ?>" required>
+                                    <input class="input--style-5" type="text" name="province" value="<?php echo $row['province']; ?>" required>
                                 </div>
                             </div>
                         </div>
@@ -157,32 +154,35 @@ while ($row = mysqli_fetch_array($sql)) {
                                 </div>
                             </div>
                         </div>
+                      
                         <div class="form-row p-t-20">
                             <label class="label label--block">By clicking the Update button below, I hereby agree to and accept the following terms and conditions governing my
 use of the website.</label>
-                        </div>
-                        <div>
-                            <button class="btn btn--radius-2 btn--red"  name="edit_official_btn">UPDATE</button>
-                        </div>
-                        
-                    </form>
 
-                   
+
+                        </div>
+                
+                        
+                     
+                        <button class="btn btn--radius-2 btn--red"   name="edit_official_btn">UPDATE</button>   
+                    </form>
+              
                      <a href="official_details.php?id=<?php echo $row['id']?>"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit">CANCEL</button></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<?php
-            }
-                ?>
-   
+
+  
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
-       
+              
+<?php
+            }
+                ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 

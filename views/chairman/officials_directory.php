@@ -10,12 +10,11 @@ include "../../db_connection.php";
     <title>Barangay Officials Philippines Record</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">  -->
+
     <link rel="stylesheet" href="../../public/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-    <!-- <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>  -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
@@ -29,8 +28,8 @@ include "../../db_connection.php";
         <div id="page-content-wrapper">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
                 <div class="d-flex align-items-center">
-                <i class="fas fa-align-left fs-4 me-3" id="menu-toggle"></i>
-                <h2 class="fs-3 fw-bold m-0">OFFICIAL DIRECTORY</h2>
+                    <i class="fas fa-align-left fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-3 fw-bold m-0">OFFICIAL DIRECTORY</h2>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +43,7 @@ include "../../db_connection.php";
                                 <i class="doe fas fa-user me-2"></i><?php echo $_SESSION['role']; ?>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                               
+
                                 <li><a class="dropdown-item" href="../../logout.php">Logout</a></li>
                             </ul>
                         </li>
@@ -54,7 +53,7 @@ include "../../db_connection.php";
 
             <section>
                 <div class="top-section"> <a href="add_officials.php">
-                    <button class="add-official-btn"> Add Official </button>
+                        <button class="add-official-btn"> Add Official </button>
                     </a>
                 </div>
                 <div class="table-responsive" style="width: 95%;">
