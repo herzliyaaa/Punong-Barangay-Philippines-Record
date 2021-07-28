@@ -80,10 +80,10 @@
                     <div class="col-md-3">
 
 
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-start align-items-center rounded">
                       
-                            <!-- <i class="fas fa-users fs-4 me-1"></i> -->
-                            <h2> Total Population of BRGY Officials: <span> <?php echo $population['pop_cnt']; ?> </span></h2>
+                            <i class="fas fa-users fs-4 me-1"></i>
+                            <h2 class="text-center py-3"> Total Population of Barangay Officials in Philippines:  <?php echo $population['pop_cnt']; ?> </span></h2>
                  
 
 
@@ -93,27 +93,28 @@
                     </div>
 
                     <div class="col-md-4">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
+                        <div class="p-1 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
                             <div class="pb-head">
-                                <h4> Punong Barangay: <?php echo $pb['pb_cnt']; ?></h4>
+                            
+                                <h2 class="text-center py-3"> Punong Barangay: <?php echo $pb['pb_cnt']; ?></h2>
                             </div>
-                            <!--                        
-                        <div class="sbm-head"><h3> Sangguniang Barangay Member:  </h3> </div>
-                        <h3> SK Chairperson:  </h3> -->
+                           
                         </div>
 
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center ">
+                        <div class="bg-white shadow-sm d-flex justify-content-center align-items-center ">
                            
                         <div class="sbm-head">
-                        <h4> Sangguniang Barangay Member: <?php echo $sbm['sbm_cnt']; ?></h4>
+                      
+                        <h2 class="text-center py-3"> Sangguniang Barangay Member: <?php echo $sbm['sbm_cnt']; ?></h2>
                         </div>
                         </div>
 
 
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center">
+                        <div class=" bg-white shadow-sm d-flex justify-content-center align-items-center">
                         
                         <div class="sk-head">
-                        <h4> SK Chairperson: <?php echo $sk['sk_cnt']; ?> </h4>
+                      
+                        <h2 class=" mb-3 text-center py-3"> SK Chairperson: <?php echo $sk['sk_cnt']; ?> </h2>
                         </div>
                         </div>
 
@@ -126,13 +127,15 @@
                     </div> -->
 
                     <div class="col-md-5">
+                    
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
-
+                       
 
                             <canvas id="dash_Chart"></canvas>
-
+                            
                         </div>
+                        
                     </div>
 
                 </div>

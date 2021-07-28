@@ -63,7 +63,7 @@
                     
 
                     <div class="col-md-6">
-                    <h6>PROVINCIAL POPULATION COUNT OF BRGY. OFFICIALS</h6>
+                    <h6 class="text-center">PROVINCIAL POPULATION COUNT OF BRGY. OFFICIALS</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
                         <canvas id="canvas1"></canvas>
                         </div>
@@ -82,7 +82,7 @@
                     </div> -->
 
                     <div class="col-md-6">
-                    <h6>PROVINCIAL POPULATION COUNT OF BRGY OFFICIALS ACCORDING TO ITS POSITIONS</h6>
+                    <h6 class="text-center">PROVINCIAL POPULATION COUNT OF BRGY OFFICIALS ACCORDING TO ITS POSITIONS</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
 
@@ -97,7 +97,7 @@
                 <div class="row g-3 my-2">
                   
                   <div class="col-md-6">
-                  <h6>PROVINCIAL POPULATION COUNT OF BRGY. OFFICIALS</h6>
+                  <h6 class="text-center">PROVINCIAL POPULATION COUNT OF BRGY. OFFICIALS</h6>
                       <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
                       <canvas id="canvas3"></canvas>
@@ -105,7 +105,7 @@
                   </div>
 
                   <div class="col-md-6">
-                  <h6>PROVINCIAL POPULATION COUNT OF BRGY OFFICIALS ACCORDING TO ITS POSITIONS</h6>
+                  <h6 class="text-center">PROVINCIAL POPULATION COUNT OF BRGY OFFICIALS ACCORDING TO ITS POSITIONS</h6>
                       <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                     
                       <canvas id="canvas4"></canvas>
