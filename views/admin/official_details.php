@@ -19,28 +19,21 @@ while ($row = mysqli_fetch_array($sql))
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
+   
 
     <!-- Title Page-->
     <title>Barangay Officials Philippines Record<</title>
-
-    <!-- Icons font CSS-->
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="icon" type="image/x-icon" href="../../public/img/a.ico"  />
+ 
     <!-- Font special for pages-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <!-- Vendor CSS-->
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="\Punong-Barangay-Philippines-Record\public\css\add-official.css" rel="stylesheet" media="all">
+    <link href="../../public/css/add-official.css" rel="stylesheet" media="all">
     <style type="text/css">
         .wrapper--w790 {
     max-width: 90%;
@@ -77,7 +70,7 @@ while ($row = mysqli_fetch_array($sql))
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item" href="../../logout.php">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -196,10 +189,10 @@ while ($row = mysqli_fetch_array($sql))
                            
                             <?php include('modal.php'); ?>
                         </div>
-                        <a href="officials_directory.php"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit">CANCEL</button></a>
+                     
                     </form>  <br>
                    
-                  
+                    <a href="officials_directory.php"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit">CANCEL</button></a>
                     </div>
 
             </div>

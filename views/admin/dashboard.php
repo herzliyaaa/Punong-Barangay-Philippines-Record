@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Punong Barangay Philippines Record</title>
+    <link rel="icon" type="image/x-icon"href="../../public/img/a.ico"  />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />

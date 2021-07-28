@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Punong Barangay Philippines Record</title>
+    <link rel="icon" type="image/x-icon" href="../../public/img/a.ico"  />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -94,28 +95,7 @@
                
 
 
-                <div class="col">
-                    <!-- <table class="table bg-white rounded shadow-sm  table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col" width="50">#</th>
-                                <th scope="col">Region</th>
-                                <th scope="col">Province</th>
-                                <th scope="col">City</th>
-                                <th scope="col">Barangay</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>test</td>
-                                <td>test</td>
-                                <td>test</td>
-                                <td>test</td>
-                            </tr>
-                        </tbody>
-                    </table> -->
-                </div>
+                
             </div>
 
         </div>

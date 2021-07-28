@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Punong Barangay Philippines Record</title>
+    <link rel="icon" type="image/x-icon" href="../../public/img/a.ico"  />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -63,32 +64,18 @@
                     
 
                     <div class="col-md-6">
-                    <h6 class="text-center fw-bold">Barangay Officials Population Count by Province in Region 1</h6>
+                    <h6 class="text-center">Barangay Officials Population Count by Province in Region 1</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
                         <canvas id="canvas1"></canvas>
                         </div>
-
-                       
-
-
-        
-
                     </div>
 
-                    <!-- <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-
-                        </div>
-                    </div> -->
+                
 
                     <div class="col-md-6">
-                    <h6 class="text-center fw-bold">Provincial Population Count of Brgy. Officials According to their Positions</h6>
+                    <h6 class="text-center">Provincial Population Count of Brgy. Officials According to their Positions</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-
-
-
                             <canvas id="canvas2"></canvas>
-
                         </div>
                     </div>
 
@@ -97,17 +84,15 @@
                 <div class="row g-3 my-2">
                   
                   <div class="col-md-6">
-                  <h6 class="text-center fw-bold">Barangay Officials Population Count by Province in Region 2</h6>
+                  <h6 class="text-center">Barangay Officials Population Count by Province in Region 2</h6>
                       <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-
                       <canvas id="canvas3"></canvas>
                       </div>
                   </div>
 
                   <div class="col-md-6">
-                  <h6 class="text-center fw-bold">Provincial Population Count of Brgy. Officials According to their Positions</h6>
+                  <h6 class="text-center">Provincial Population Count of Brgy. Officials According to their Positions</h6>
                       <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                    
                       <canvas id="canvas4"></canvas>
                       </div>
                   </div>
