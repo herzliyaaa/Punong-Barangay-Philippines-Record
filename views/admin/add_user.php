@@ -5,28 +5,22 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
+    
 
     <!-- Title Page-->
     <title>Barangay Officials Philippines Record<</title>
 
-    <!-- Icons font CSS-->
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+   
     <!-- Font special for pages-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <!-- Vendor CSS-->
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+   
 
     <!-- Main CSS-->
-    <link href="\Punong-Barangay-Philippines-Record\public\css\add-official.css" rel="stylesheet" media="all">
+    <link href="../../public/css/add-official.css" rel="stylesheet" media="all">
    
     <style type="text/css">
        
@@ -63,8 +57,8 @@
                                 <i class="doe fas fa-user me-2"></i><?php echo $_SESSION['role']; ?>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+
+                                <li><a class="dropdown-item" href="../../logout.php">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -96,7 +90,7 @@
                             </div>
                         </div>
                           <div class="form-row">
-                            <div class="name">Passowrd:</div>
+                            <div class="name">Password:</div>
                             <div class="value">
                                 <div class="input-group">
                                      <input class="input--style-5" type="text" name="password" required>
@@ -119,13 +113,13 @@
                             </div>
                         </div>
                 
-                         <button style="margin-left:-10%" class="btn btn--radius-2 btn--red" name="add_user_btn" >
+                         <button  class="btn btn--radius-2 btn--red" name="add_user_btn" >
                           ADD</button>
                            
                    
                        
                     </form>  <br>
-                    <a href="users_list.php"><button style="margin-left:60%" class="btn btn--radius-2 btn--red" type="submit">BACK</button></a>
+                    <a href="users_list.php"><button  class="btn btn--radius-2 btn--red" type="submit">BACK</button></a>
                    
                   
                     </div>
