@@ -85,26 +85,24 @@
 
 
 <script>
-    var ilocos_norte_ctx = document.getElementById("bar_ilocos_norte");
-    var bar_ilocos_norte = new Chart(ilocos_norte_ctx, {
-        type: 'bar',
-        data: {
+    var barChartData5 = {
+        labels: [
+            "Adams", "Bacarra",  "Badoc", "Burgos", "Carasi"
 
-            labels: [ "Adams", "Bacarra",  "Badoc", "Burgos", "Carasi"
-
-            ],
-
-            datasets: [{
+        ],
+        datasets: [{
                 label: "Punong Barangay",
                 backgroundColor: "#73AB84",
                 borderColor: "#73AB84",
                 borderWidth: 1,
                 data: [
+                    
                     <?php echo $adpb['adpb_cnt']; ?>,
                     <?php echo $baccarapb['baccarapb_cnt']; ?>,
                     <?php echo $badocpb['badocpb_cnt']; ?>,
-                    <?php echo $burgospb['burgospb_cnt']; ?>,
+                    <?php echo $burgosspb['burgosspb_cnt']; ?>,
                     <?php echo $carasipb['carasipb_cnt']; ?>
+                      
                 ]
             },
             {
@@ -113,13 +111,15 @@
                 borderColor: "#507DBC",
                 borderWidth: 1,
                 data: [
-
+                    
                     <?php echo $adamssbm['adamssbm_cnt']; ?>,
                     <?php echo $bacarrasbm['bacarrasbm_cnt']; ?>,
                     <?php echo $badocsbm['badocsbm_cnt']; ?>,
-                    <?php echo $burgossbm['burgossbm_cnt']; ?>,
+                    <?php echo $burgosssbm['burgosssbm_cnt']; ?>,
                     <?php echo $carasisbm['carasisbm_cnt']; ?>
-                ]
+                      
+                    
+                    ]
             },
             {
                 label: "SK Chairperson",
@@ -127,47 +127,43 @@
                 borderColor: "#EFC88B",
                 borderWidth: 1,
                 data: [
-
+                    
                     <?php echo $adamssk['adamssk_cnt']; ?>,
                     <?php echo $bacarrask['bacarrask_cnt']; ?>,
                     <?php echo $badocsk['badocsk_cnt']; ?>,
                     <?php echo $burgossk['burgossk_cnt']; ?>,
                     <?php echo $carasisk['carasisk_cnt']; ?>
-
-                ]
+                      
+                    
+                    
+                    ]
             }
 
         ]
-    },
+    };
 
-        options: {
-
-            responsive: true,
-            maintainAspectRatio: false,
-
-
-            legend: {
-                position: 'right',
-                display: true
-            },
-
-            scales: {
+    var chartOptions5 = {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+            position: "bottom"
+        },
+        
+        scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero: true,
-                    maxRotation: 0,
-                    autoSkip: true
+                    beginAtZero: true
                 }
             }]
         }
+    }
 
-        }
-    });
-
-
-
-
-
-
+    window.onload = function() {
+        var inctx = document.getElementById("canvas_in").getContext("2d");
+        window.myBar = new Chart(inctx, {
+            type: "bar",
+            data: barChartData5,
+            options: chartOptions5
+        });
+    };
 </script>
-

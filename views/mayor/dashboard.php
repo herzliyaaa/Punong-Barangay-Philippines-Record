@@ -79,7 +79,7 @@
                     <div class="col-md-6">
                     <h6  class="text-center">Total Population of Brgy. Officials in Ilocos Norte According to its Position</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                        <canvas id="bar_ilocos_norte"></canvas>
+                        <canvas id="canvas_in"></canvas>
 
                         </div>
                     </div>

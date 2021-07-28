@@ -24,6 +24,6 @@ if (isset($_POST['edit_user_btn'])) {
 // if (mysqli_query($connect, $sql)) {
 //     echo "New record created successfully";}
 
-else {
-    echo "Error: " . $savesql . "<br>" . mysqli_error($connect);
-}
+// else {
+//     echo "Error: " . $sql . "<br>" . mysqli_error($connect);
+// }

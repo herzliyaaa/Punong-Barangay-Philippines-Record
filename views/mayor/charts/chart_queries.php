@@ -15,8 +15,8 @@ $baccarapb = mysqli_fetch_array($bacarra_pb);
 $badoc_pb =  mysqli_query($connect, "SELECT COUNT(id) as badocpb_cnt from records where Region = 'Region 1' and position = 'Punong Barangay' and province = 'Ilocos Norte' and city =  'Badoc'");
 $badocpb = mysqli_fetch_array($badoc_pb);
 
-$burgos_pb =  mysqli_query($connect, "SELECT COUNT(id) as burgospb_cnt from records where Region = 'Region 1' and position = 'Punong Barangay' and province = 'Ilocos Norte' and city =  'Burgos'");
-$burgospb = mysqli_fetch_array($burgos_pb);
+$burgoss_pb =  mysqli_query($connect, "SELECT COUNT(id) as burgosspb_cnt from records where Region = 'Region 1' and position = 'Punong Barangay' and province = 'Ilocos Norte' and city =  'Burgos'");
+$burgosspb = mysqli_fetch_array($burgoss_pb);
 
 $carasi_pb =  mysqli_query($connect, "SELECT COUNT(id) as carasipb_cnt from records where Region = 'Region 1' and position = 'Punong Barangay' and province = 'Ilocos Norte' and city =  'Carasi'");
 $carasipb = mysqli_fetch_array($carasi_pb);
@@ -35,8 +35,8 @@ $bacarrasbm = mysqli_fetch_array($bacarra_sbm);
 $badoc_sbm =  mysqli_query($connect, "SELECT COUNT(id) as badocsbm_cnt from records where Region = 'Region 1' and position = 'Sangguniang Barangay Member'   and province = 'Ilocos Norte' and city =  'Badoc'");
 $badocsbm = mysqli_fetch_array($badoc_sbm);
 
-$burgos_sbm =  mysqli_query($connect, "SELECT COUNT(id) as burgossbm_cnt from records where Region = 'Region 1' and position = 'Sangguniang Barangay Member' and province = 'Ilocos Norte' and city =  'Burgos' ");
-$burgossbm = mysqli_fetch_array($burgos_sbm);
+$burgoss_sbm =  mysqli_query($connect, "SELECT COUNT(id) as burgosssbm_cnt from records where Region = 'Region 1' and position = 'Sangguniang Barangay Member' and province = 'Ilocos Norte' and city =  'Burgos' ");
+$burgosssbm = mysqli_fetch_array($burgoss_sbm);
 
 $carasi_sbm =  mysqli_query($connect, "SELECT COUNT(id) as carasisbm_cnt from records where Region = 'Region 1' and position = 'Sangguniang Barangay Member' and province = 'Ilocos Norte' and city =  'Carasi' ");
 $carasisbm = mysqli_fetch_array($carasi_sbm);
