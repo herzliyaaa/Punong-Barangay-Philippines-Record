@@ -57,13 +57,13 @@
             </nav>
 
             <div class="container-fluid px-4">
-            <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Region 1 </h3>
+            <h3 class="fs-4 mb-2 text-center py-1 dark-text fs-4 fw-bold text-uppercase border-bottom">Region 1 </h3>
                 <div class="row g-3 my-2">
 
                     
 
                     <div class="col-md-6">
-                    <h6 class="text-center">PROVINCIAL POPULATION COUNT OF BRGY. OFFICIALS</h6>
+                    <h6 class="text-center fw-bold">Barangay Officials Population Count by Province in Region 1</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-center align-items-center rounded">
                         <canvas id="canvas1"></canvas>
                         </div>
@@ -82,7 +82,7 @@
                     </div> -->
 
                     <div class="col-md-6">
-                    <h6 class="text-center">PROVINCIAL POPULATION COUNT OF BRGY OFFICIALS ACCORDING TO ITS POSITIONS</h6>
+                    <h6 class="text-center fw-bold">Provincial Population Count of Brgy. Officials According to their Positions</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
 
@@ -93,11 +93,11 @@
                     </div>
 
                 </div>
-                <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Region 2 </h3>
+                <h3 class="fs-4 mb-2 text-center py-2 dark-text fs-4 fw-bold text-uppercase border-bottom">Region 2 </h3>
                 <div class="row g-3 my-2">
                   
                   <div class="col-md-6">
-                  <h6 class="text-center">PROVINCIAL POPULATION COUNT OF BRGY. OFFICIALS</h6>
+                  <h6 class="text-center fw-bold">Barangay Officials Population Count by Province in Region 2</h6>
                       <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
                       <canvas id="canvas3"></canvas>
@@ -105,7 +105,7 @@
                   </div>
 
                   <div class="col-md-6">
-                  <h6 class="text-center">PROVINCIAL POPULATION COUNT OF BRGY OFFICIALS ACCORDING TO ITS POSITIONS</h6>
+                  <h6 class="text-center fw-bold">Provincial Population Count of Brgy. Officials According to their Positions</h6>
                       <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                     
                       <canvas id="canvas4"></canvas>

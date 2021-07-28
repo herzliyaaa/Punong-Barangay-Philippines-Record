@@ -473,7 +473,7 @@ canvas#canvas4 {
 }
 
 canvas#dash_Chart {
-  height: 240px !important;
+  height: 255px !important;
 
 }
 
@@ -507,7 +507,7 @@ canvas#canvas_banayoyo{
   margin: auto;
   align-items: center;
   width: 500px;
-  justify-content: start;
+  justify-content: center;
 }
 
 .sbm-head {
@@ -515,7 +515,7 @@ canvas#canvas_banayoyo{
   margin: auto;
   align-items: center;
   width: 500px;
-  justify-content: start;
+  justify-content: center;
 }
 
 
@@ -524,5 +524,5 @@ canvas#canvas_banayoyo{
   margin: auto;
   align-items: center;
   width: 500px;
-  justify-content: start;
+  justify-content: center;
 }

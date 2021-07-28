@@ -68,7 +68,7 @@
 
                         </div>
                     </div> -->
-                    <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials</h3>
+                    <h3 class="fs-4 mb-1 text-center py-1 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials by region</h3>
                     <div class="col-md-12">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="row my-5">
-                    <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials According to its position</h3>
+                    <h3 class="fs-4 mb-2 text-center py-2 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials According to their position</h3>
                     <div class="col-md-12">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <canvas id="canvas"></canvas>

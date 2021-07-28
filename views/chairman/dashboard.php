@@ -59,7 +59,7 @@
 
            
             <div class="container-fluid px-4">
-            <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Region 1</h3>
+            <h3 class="fs-4 mb-2 text-center py-1 dark-text fs-4 fw-bold text-uppercase border-bottom">Region 1</h3>
                 <div class="row g-3 my-2">
 
                    
@@ -67,13 +67,12 @@
                 
 
                     <div class="col-md-12">
-                    <h6 class="text-center">POPULATION COUNT OF BRGY OFFICIALS IN BANAYOYO CITY ACCORDING TO ITS POSITIONS</h6>
+                    <h6 class="text-center py-2">Population Count of Brgy. Officials in Alilem City According to their Positions</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
 
+                        <canvas id="canvas_alilem"></canvas>
 
-
-                            <canvas id="canvas_banayoyo"></canvas>
-
+                            
                         </div>
                     </div>
 
@@ -82,9 +81,10 @@
                 <div class="row my-6">
               
                     <div class="col-md-12">
-                    <h6 class="text-center">POPULATION COUNT OF BRGY OFFICIALS IN ALILEM CITY ACCORDING TO ITS POSITIONS</h6>
+                    <h6 class="text-center py-3">Population Count of Brgy. Officials in Banayoyo City According to their Positions</h6>
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <canvas id="canvas_alilem"></canvas>
+                        <canvas id="canvas_banayoyo"></canvas>
+
 
                         </div>
                     </div>

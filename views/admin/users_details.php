@@ -14,28 +14,20 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
+
 
     <!-- Title Page-->
     <title>Barangay Officials Philippines Record<</title>
 
-    <!-- Icons font CSS-->
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <!-- Font special for pages-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <!-- Vendor CSS-->
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="\Punong-Barangay-Philippines-Record\public\css\add-official.css" rel="stylesheet" media="all">
+    <link href="../../public/css/add-official.css" rel="stylesheet" media="all">
    
     <style type="text/css">
        
@@ -83,7 +75,7 @@
                     </ul>
                 </div>
             </nav>
-
+         
     <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
@@ -91,7 +83,7 @@
                     <h2 class="title">View User Details</h2>
                 </div>
                 <div class="card-body">
-                    <form action="./edit_user_function.php" method="post" enctype="multipart/form-data" class="user-view-form">
+                    <form action=" edit_user.php?id=<?php echo $row['id']?>" method="post" enctype="multipart/form-data" class="user-view-form">
                          <div class="form-row">
                             <div class="name">ID:</div>
                             <div class="value">
@@ -132,14 +124,14 @@
                                 </div>
                             </div>
                         </div>
-                
-                         <button style="margin-left:-10%" class="btn btn--radius-2 btn--red"  >
-                          <a href="edit_user.php?id=<?php echo $row['id']?>" style="color: white;">EDIT</a></button>
+                        <a href="edit_user.php?id=<?php echo $row['id']?>" style="color: white; ">
+                         <button class="btn btn--radius-2 btn--red"  >EDIT
+                         </button></a>
                            
                    
                        
                     </form>  <br>
-                    <a href="users_list.php"><button style="margin-left:60%" class="btn btn--radius-2 btn--red" type="submit">BACK</button></a>
+                    <a href="users_list.php"><button class="btn btn--radius-2 btn--red" type="submit">BACK</button></a>
                    
                   
                     </div>
@@ -151,7 +143,7 @@
   
 
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 
 </html>
 

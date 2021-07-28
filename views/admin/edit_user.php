@@ -110,7 +110,7 @@
                             </div>
                         </div>
                           <div class="form-row">
-                            <div class="name">Passowrd:</div>
+                            <div class="name">Password:</div>
                             <div class="value">
                                 <div class="input-group">
                                      <input class="input--style-5" type="text" name="password" value="<?php echo $row['password']; ?>"  required>
@@ -133,13 +133,13 @@
                             </div>
                         </div>
                 
-                         <button style="margin-left:-10%" class="btn btn--radius-2 btn--red" name="edit_user_btn" >
+                         <button class="btn btn--radius-2 btn--red" name="edit_user_btn" >
                           SAVE</button>
                            
-                    <a href="users_details.php?id=<?php echo $row['id']?>"><button style="margin-left:60%" class="btn btn--radius-2 btn--red" type="submit">CANCEL</button></a>
+                    
                        
                     </form>  <br>
-                   
+                    <a href="users_details.php?id=<?php echo $row['id']?>"><button class="btn btn--radius-2 btn--red">CANCEL</button></a>
                    
                   
                     </div>

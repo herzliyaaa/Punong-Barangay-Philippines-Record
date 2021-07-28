@@ -110,11 +110,11 @@
                         </div>
 
 
-                        <div class=" bg-white shadow-sm d-flex justify-content-center align-items-center">
+                        <div class=" bg-white shadow-sm d-flex justify-content-center align-items-center text-center ">
                         
                         <div class="sk-head">
                       
-                        <h2 class=" mb-3 text-center py-3"> SK Chairperson: <?php echo $sk['sk_cnt']; ?> </h2>
+                        <h2 class=" mb-4 text-center py-3"> SK Chairperson: <?php echo $sk['sk_cnt']; ?> </h2>
                         </div>
                         </div>
 
@@ -141,7 +141,7 @@
                 </div>
 
                 <div class="row my-5">
-                    <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials According to its position</h3>
+                    <h3 class="fs-4 mb-3 text-center py-3 dark-text fs-4 fw-bold text-uppercase border-bottom">Population of Barangay Officials According to their position</h3>
                     <div class="col-md-12">
                         <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
                             <canvas id="canvas"></canvas>
