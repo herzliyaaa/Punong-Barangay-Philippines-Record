@@ -168,7 +168,7 @@ use of the website.</label>
                     </form>
 
                    
-                     <a href="officials_directory.php"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit">CANCEL</button></a>
+                     <a href="official_details.php?id=<?php echo $row['id']?>"><button style="margin-left: 80%;" class="btn btn--radius-2 btn--red" type="submit">CANCEL</button></a>
                 </div>
             </div>
         </div>

@@ -14,7 +14,7 @@
 
 
 <!-- Button trigger modal -->
-<button type="button" class="delete-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" class="btn btn--radius-2 btn--red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Delete
 </button>
 
