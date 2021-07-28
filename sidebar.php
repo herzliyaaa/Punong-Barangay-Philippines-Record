@@ -17,6 +17,7 @@ include "db_connection.php"
 
 
     <title>Punong Barangay Philippines Record</title>
+
 </head>
 
 <body>

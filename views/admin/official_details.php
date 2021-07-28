@@ -45,6 +45,9 @@ while ($row = mysqli_fetch_array($sql))
         .wrapper--w790 {
     max-width: 90%;
 }
+  .input--style-5 {
+                background: lightgrey;
+            }
     </style>
 
 </head>
