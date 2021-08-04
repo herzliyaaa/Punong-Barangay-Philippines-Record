@@ -8,7 +8,7 @@
  
 
     <!-- Title Page-->
-    <title>Barangay Officials Philippines Record<</title>
+    <title>Add Barangay Official | BOIS</title>
     <link rel="icon" type="image/x-icon" href="../../public/img/a.ico"  />
     
     <!-- Font special for pages-->

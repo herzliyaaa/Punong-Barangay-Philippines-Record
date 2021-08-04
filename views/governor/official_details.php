@@ -21,7 +21,7 @@ while ($row = mysqli_fetch_array($sql))
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Title Page-->
-    <title>Barangay Officials Philippines Record<</title>
+    <title>Official Details | BOIS</title>
     <link rel="icon" type="image/x-icon" href="../../public/img/a.ico"  />
    
     <!-- Font special for pages-->
