@@ -2,7 +2,7 @@
 
 <p align="center">
     <img src="public/img/a.ico" alt="Logo" width="200" height="200" margin="0px">
-    <h1 align="center">Punong-Barangay-Philippines-Record</h3>
+    <h1 align="center">Punong Barangay Philippines Record</h3>
 </p>
 
 <br />
